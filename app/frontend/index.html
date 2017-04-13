@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/navbar.css">
     <link rel="stylesheet" type="text/css" href="css/blog.css">
+    <link rel="stylesheet" type="text/css" href="css/about.css">
     <link rel="shortcut icon" type="image/icon" href="media/favicon.ico">
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"
@@ -41,13 +42,17 @@
     </div> <!-- .container -->
     <nav class="container">
         <ul class="nav_list">
-            <li><a class="active_nav" href="#">BLOG</a></li>
-            <li><a href="#">ABOUT</a></li>
+            <li><a id="blog_link" href="#">BLOG</a></li>
+            <li><a id="about_link" class="active_nav" href="#">ABOUT</a></li>
         </ul>
     </nav>
     <hr class="ruler">
     <div class="container content_wrapper">
-        <div id="blog_content" class="row"></div> <!-- .row -->
+        <div id="content" class="row">
+            <div id="about" class="col-md-8 col-md-offset-2">
+                <img id="about_pic" class="img-circle" src="media/images/about_pic_cropped.jpg">
+            </div>
+        </div> <!-- .row -->
     </div> <!-- .container -->
 </body>
 </html>
