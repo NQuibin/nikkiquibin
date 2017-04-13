@@ -1,7 +1,7 @@
 'use strict';
 
 $(function () {
-
+    $('.image_modal').click(modalClick);
 });
 
 var createImage = function (imgSrc, summary, isRight = false) {
@@ -14,6 +14,8 @@ var createImage = function (imgSrc, summary, isRight = false) {
                 <p>${summary}</p>
                 <p>Posted: ${now}</p>
                 </div>`);
+
+    image.click(zoomImage);
 
     if (isRight){
         summary.addClass('image_summary_right');
@@ -29,6 +31,14 @@ var createImage = function (imgSrc, summary, isRight = false) {
     return outer;
 };
 
-var zoomImage = function (e) {
-    
+var zoomImage = function () {
+    var src = this.src;
+    $('.image_modal_content').css({ backgroundImage: 'url(' + src + ')' });
+    $('.image_modal').fadeIn('fast');
+    $('.image_modal_content').slideDown('fast');
+};
+
+var modalClick = function () {
+    $(this).fadeOut('fast');
+    $('.image_modal_content').slideUp('fast');
 };
