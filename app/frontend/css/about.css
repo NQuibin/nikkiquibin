@@ -1,0 +1,20 @@
+.link_collection {
+    padding: 30px 0;
+    text-align: center;
+}
+
+.link {
+    display: inline-block;
+    margin: 0 15px;
+    text-align: center;
+    color: #171a1c;
+}
+
+.link:hover {
+    color: #4e873d;
+}
+
+.link_desc {
+    margin: 5px 0;
+    font-weight: bold;
+}
