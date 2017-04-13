@@ -14,8 +14,20 @@ html, body {
 }
 
 #name {
+    text-align: center;
     font-weight: bold;
     color: #4e873d;
+}
+
+#me_pic {
+    display: block;
+    margin: auto;
+    width: 20%;
+    border: 1px solid #e1e1e1;
+}
+
+.header {
+    padding-top: 25px;
 }
 
 .ruler {
