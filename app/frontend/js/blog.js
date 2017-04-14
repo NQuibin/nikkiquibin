@@ -4,15 +4,25 @@ $(function () {
     $('.image_modal').click(modalClick);
 });
 
-var createImage = function (imgSrc, summary, isRight = false) {
-    var date = new Date();
-    var now = date.getDate() +'/' + (date.getMonth() + 1) + '/' + date.getFullYear();
+var sources = [
+    '1.jpg',
+    '2.jpg',
+    '3.jpg',
+    '4.jpg',
+    '5.jpg',
+    '6.jpg',
+    '7.jpg'
+];
+var summaries = [];
+var dates = [];
+
+var createImage = function (imgSrc, summary, date, isRight = false) {
     var outer = $('<div>', { 'class': 'col-md-6' });
     var inner = $('<div>', { 'class': 'image_container' });
-    var image = $('<img>', { 'class': 'image', src: imgSrc });
+    var image = $('<img>', { 'class': 'image', src: ('/media/images/' + imgSrc) });
     var summary = $(`<div>
                 <p>${summary}</p>
-                <p>Posted: ${now}</p>
+                <p>Posted: ${date}</p>
                 </div>`);
 
     image.click(zoomImage);
