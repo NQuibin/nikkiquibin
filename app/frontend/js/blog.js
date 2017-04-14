@@ -1,45 +1,41 @@
-'use strict';
-
 $(function () {
+    'use strict';
+
+    var blogLoaded = false;
+    $('#blog_slider').hide();
+
+    $('#about_link').click(function (e) {
+        e.preventDefault();
+        $('#blog_slider').hide(300);
+        $('#about').show(300);
+        $('#blog_link').removeClass('active_nav');
+        $('#about_link').addClass('active_nav');
+    });
+
+    $('#blog_link').click(function (e) {
+       e.preventDefault();
+       $('#about').hide(300);
+       if (blogLoaded) $('#blog_slider').show(300);
+       else {
+           $('#blog_slider').show(300, function () {
+               $('#light_slider').lightSlider({
+                   gallery: false,
+                   loop: true,
+                   slideMargin: 10,
+                   adaptiveHeight: true,
+                   enableDrag: false
+               });
+           });
+           blogLoaded = true;
+       }
+       $('#about_link').removeClass('active_nav');
+       $('#blog_link').addClass('active_nav');
+    });
+
+
+    $('.slide_image').click(zoomImage);
     $('.image_modal').click(modalClick);
 });
-
-var sources = [
-    '1.jpg',
-    '2.jpg',
-    '3.jpg',
-    '4.jpg',
-    '5.jpg',
-    '6.jpg',
-    '7.jpg'
-];
-var summaries = [];
-var dates = [];
-
-var createImage = function (imgSrc, summary, date, isRight = false) {
-    var outer = $('<div>', { 'class': 'col-md-6' });
-    var inner = $('<div>', { 'class': 'image_container' });
-    var image = $('<img>', { 'class': 'image', src: ('/media/images/' + imgSrc) });
-    var summary = $(`<div>
-                <p>${summary}</p>
-                <p>Posted: ${date}</p>
-                </div>`);
-
-    image.click(zoomImage);
-
-    if (isRight){
-        summary.addClass('image_summary_right');
-        inner.append(summary);
-        inner.append(image);
-    } else {
-        summary.addClass('image_summary');
-        inner.append(image);
-        inner.append(summary);
-    }
-
-    outer.append(inner);
-    return outer;
-};
 
 var zoomImage = function () {
     var src = this.src;
