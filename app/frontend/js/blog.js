@@ -1,39 +1,23 @@
 $(function () {
     'use strict';
 
-    var blogLoaded = false;
-    $('#blog_slider').hide();
+    $('#blog').hide();
 
-    $('#about_link').click(function (e) {
-        e.preventDefault();
-        $('#blog_slider').hide(300);
+    $('#about_link').click(function () {
+        $('#blog').hide(300);
         $('#about').show(300);
         $('#blog_link').removeClass('active_nav');
         $('#about_link').addClass('active_nav');
     });
 
-    $('#blog_link').click(function (e) {
-       e.preventDefault();
-       $('#about').hide(300);
-       if (blogLoaded) $('#blog_slider').show(300);
-       else {
-           $('#blog_slider').show(300, function () {
-               $('#light_slider').lightSlider({
-                   gallery: false,
-                   loop: true,
-                   slideMargin: 10,
-                   adaptiveHeight: true,
-                   enableDrag: false
-               });
-           });
-           blogLoaded = true;
-       }
-       $('#about_link').removeClass('active_nav');
-       $('#blog_link').addClass('active_nav');
+    $('#blog_link').click(function () {
+        $('#about').hide(300);
+        $('#blog').show(300);
+        $('#about_link').removeClass('active_nav');
+        $('#blog_link').addClass('active_nav');
     });
 
-
-    $('.slide_image').click(zoomImage);
+    $('.blog_image').click(zoomImage);
     $('.image_modal').click(modalClick);
 });
 

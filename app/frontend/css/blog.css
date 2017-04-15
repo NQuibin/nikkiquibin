@@ -25,28 +25,28 @@
     border: 5px solid #fff;
 }
 
-.slide_image {
-    height: 275px;
+.blog_post {
+    padding: 5px 5px 0 5px;
+    margin-bottom: 25px;
+    background-color: #4e873d;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.blog_image {
     width: 100%;
 }
 
-.slide_image:hover {
+.blog_image:hover {
     opacity: 0.7;
     cursor: pointer;
 }
 
-/**
- * lightSlider overrides
- */
-
-/* pager size */
-.lSSlideOuter .lSPager.lSpg > li a {
-    width: 15px;
-    height: 15px;
+.blog_info {
+    padding: 15px;
+    color: #e6e5e5;
 }
 
-/* pager colour on hover and active */
-.lSSlideOuter .lSPager.lSpg > li.active a,
-.lSSlideOuter .lSPager.lSpg > li:hover a {
-    background-color: #4e873d;
+.blog_info > p {
+    margin: 0;
 }
