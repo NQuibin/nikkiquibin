@@ -25,8 +25,13 @@
     border: 5px solid #fff;
 }
 
+.blog_post_wrapper {
+    padding: 0 5px;
+}
+
 .blog_post {
-    margin-bottom: 25px;
+    margin-bottom: 10px;
+    background-color: #d7d6d6;
     border: 1px solid #4e873d;
 }
 
@@ -40,9 +45,13 @@
 }
 
 .blog_info {
-    padding: 15px;
+    padding: 5px;
 }
 
 .blog_info > p {
     margin: 0;
+}
+
+.blog_info > p:first-child {
+    font-weight: bold;
 }

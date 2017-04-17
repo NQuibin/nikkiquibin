@@ -31,7 +31,8 @@ var sources = [
     '04.jpg',
     '05.jpg',
     '06.jpg',
-    '07.jpg'
+    '07.jpg',
+    '08.jpg'
 ];
 
 var date = [
@@ -39,9 +40,10 @@ var date = [
     '2017/3/15',
     '2017/3/21',
     '2017/3/29',
-    '2017/3/07',
-    '2017/3/12',
-    '2017/3/13'
+    '2017/4/07',
+    '2017/4/12',
+    '2017/4/13',
+    '2017/4/14'
 ];
 
 var message = [
@@ -51,7 +53,8 @@ var message = [
     'Osaka Sushi',
     'Karaikudi Chettinad Restaurant',
     'Korean Grill',
-    'Burrito Boyz'
+    'Burrito Boyz',
+    'Dairy Queen'
 ];
 
 var initBlog = function () {
@@ -64,7 +67,7 @@ var initBlog = function () {
 };
 
 var createPost = function (src, date, summary) {
-    var post = $(`<div class="col-md-4">
+    var post = $(`<div class="col-md-4 blog_post_wrapper">
                     <div class="blog_post">
                         <img class="blog_image" src="media/images/blog_photo_${src}">
                         <div class="blog_info">
