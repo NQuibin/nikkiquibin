@@ -3,14 +3,16 @@ $(function () {
 
     initBlog();
 
-    $('#about_link').click(function () {
+    $('#about_link').click(function (e) {
+        e.preventDefault();
         $('#blog').hide(300);
         $('#about').show(300);
         $('#blog_link').removeClass('active_nav');
         $('#about_link').addClass('active_nav');
     });
 
-    $('#blog_link').click(function () {
+    $('#blog_link').click(function (e) {
+        e.preventDefault();
         $('#about').hide(300);
         $('#blog').show(300);
         $('#about_link').removeClass('active_nav');
