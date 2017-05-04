@@ -8,43 +8,50 @@
 html, body {
     margin: 0;
     padding: 0;
-    background-color: #e6e5e5;
+    background: #e6e5e5;
+    background-size: cover;
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
     color: #171a1c;
 }
 
-#name {
+.content_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content_pic {
+    width: 250px;
+    height: 250px;
+    border: #b9b8b8 solid 1px;
+}
+
+.content_info {
+    margin: 0 30px;
+}
+
+.content_info > h1,
+.content_info > p {
+    margin: 0;
+}
+
+.content_info > h1 {
+    margin-bottom: 10px;
     text-align: center;
-    font-weight: bold;
     color: #4e873d;
 }
 
-#me_pic {
-    display: block;
-    margin: auto;
-    width: 30%;
-    min-width: 30%;
-    border: 1px solid #e1e1e1;
+.content_links {
+    margin-top: 30px;
+    text-align: center;
 }
 
-@media (max-width: 480px) {
-    #me_pic {
-        width: 60%;
-    }
+.content_links > a {
+    margin: 0 15px;
+    text-decoration: none;
 }
 
-.header {
-    padding-top: 25px;
-}
-
-.ruler {
-    margin: 25px 50px 0 50px;
-    height: 2px;
-    background: linear-gradient(to right, #e6e5e5, #4e873d, #e6e5e5),
-                #4e873d; /* backup color */
-}
-
-.content_wrapper {
-    padding: 25px 0;
+.content_links > a:hover {
+    opacity: 0.7;
 }
