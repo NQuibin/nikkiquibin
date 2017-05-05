@@ -24,6 +24,7 @@ html, body {
 .content_pic {
     width: 250px;
     height: 250px;
+    margin: 30px 0;
     border: #b9b8b8 solid 1px;
 }
 
@@ -43,7 +44,7 @@ html, body {
 }
 
 .content_links {
-    margin-top: 30px;
+    margin: 30px 0;
     text-align: center;
 }
 
@@ -54,4 +55,10 @@ html, body {
 
 .content_links > a:hover {
     opacity: 0.7;
+}
+
+@media only screen and (max-width: 480px) {
+    .content_wrapper {
+        flex-direction: column;
+    }
 }
