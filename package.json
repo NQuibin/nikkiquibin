@@ -1,0 +1,36 @@
+{
+  "name": "nquibin.github.io",
+  "version": "1.0.0",
+  "description": "Personal Website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production",
+    "build:dev": "webpack-dev-server --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NQuibin/NQuibin.github.io.git"
+  },
+  "author": "Nikki Louis Quibin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NQuibin/NQuibin.github.io/issues"
+  },
+  "homepage": "https://github.com/NQuibin/NQuibin.github.io#readme",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^2.1.0",
+    "file-loader": "^3.0.1",
+    "image-webpack-loader": "^4.6.0",
+    "mini-css-extract-plugin": "^0.5.0",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^3.1.14"
+  }
+}

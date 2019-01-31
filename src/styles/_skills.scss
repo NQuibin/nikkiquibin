@@ -1,0 +1,95 @@
+@import 'colours';
+
+$filled-block: $tertiary-color;
+$empty-block: #ebebeb;
+
+%skill-block-shared {
+    display: inline-block;
+    width: 50px;
+    height: 10px;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+.grid-item-skills {
+    grid-area: skills;
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    > h2 {
+        margin-bottom: 25px;
+    }
+
+    > div {
+        margin-bottom: 30px;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+
+        > h2 {
+            margin-bottom: 15px;
+        }
+
+        > ul {
+            list-style: none;
+
+            > li {
+                margin-bottom: 5px;
+                font-size: 1.2rem;
+                color: $text-color-alternate;
+            }
+        }
+
+        > div,
+        > div > div {
+            margin-bottom: 15px;
+        }
+    }
+
+    .collapsible {
+        display: none;
+    }
+
+    .expand {
+        display: inline-block;
+        color: $text-color;
+        font-size: 1.2rem;
+        outline: none;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .skill-block {
+        @extend %skill-block-shared;
+        background-color: $empty-block;
+
+        &--filled {
+            @extend %skill-block-shared;
+            background-color: $filled-block;
+        }
+
+        &--half-filled {
+            @extend %skill-block-shared;
+            background-image: -webkit-linear-gradient(left, $filled-block 0%, $filled-block 50%, $empty-block 50%);
+        }
+
+        &--disabled {
+            @extend %skill-block-shared;
+            background-color: grey;
+        }
+    }
+}
+
+/** Media Queries **/
+
+//@media screen and (min-width: 768px) {
+//
+//    %skill-block-shared {
+//        width: 70px;
+//    }
+//
+//}

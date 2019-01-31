@@ -5,48 +5,274 @@
     <meta name="author" content="Nikki Quibin">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- icon -->
-    <link rel="icon" href="media/favicon.ico">
+    <link rel="icon" href="src/media/favicon.ico">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet"
-        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="dist/main.css" />
 
-    <!-- main.css -->
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
-
-    <!-- Bootstrap JS, Popper.js, jQuery -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous" defer></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous" defer></script>
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"
+            defer
+    ></script>
+    <script src="dist/bundle.js" defer></script>
 
     <title>Nikki Louis Quibin</title>
 </head>
 <body>
-    <div id="alpha_wrapper"></div>
-    <div id="content">
-        <h1>NIKKI LOUIS QUIBIN</h1>
-        <div id="links">
-            <a href="files/nikki_quibin_resume.pdf" target="_blank">
-                <img class="rounded-circle" src="media/resume_icon.png" alt="resume" />
-            </a>
-            <a href="https://www.linkedin.com/in/nikki-louis-quibin-539ba796/" target="_blank">
-                <img class="rounded-circle" src="media/linkedin_icon.png" alt="linkedin" />
-            </a>
-            <a href="https://github.com/NQuibin" target="_blank">
-                <img class="rounded-circle" src="media/github_icon.png" alt="github" />
-            </a>
-            <!-- <a href="" target="_blank">
-                <img class="rounded-circle" src="media/instagram_icon.png" alt="instagram" />
-            </a> --> <!-- private so no public link -->
+    <img id="top" src="src/media/up-arrow_icon.png" alt="To top button" />
+    <div class="navbar">
+        <ul>
+            <li>
+                <a class="nav-link" href="#summary">Summary</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#skills">Skills</a>
+            </li>
+        </ul>
+    </div>
+    <div class="grid-container">
+        <div class="grid-item-navbar">
+            <div class="bar-container">
+                <span class="bar1"></span>
+                <span class="bar2"></span>
+                <span class="bar3"></span>
+            </div>
+        </div>
+        <div class="grid-item-header">
+            <div class="header-background"></div>
+            <div class="header-content">
+                <h2>
+                    Hello, I<span>'</span>m
+                </h2>
+                <h1>
+                    Nikki Louis Quibin<span>.</span>
+                </h1>
+                <h2>Full Stack Software Developer</h2>
+            </div>
+        </div>
+        <div class="grid-item-subheader">
+            <img src="src/media/headshot.jpeg" alt="Nikki Louis Quibin Profile Photo" />
+            <h1>Toronto Ontario, Canada</h1>
+            <a href="mailto:nikki.quibin@gmail.com">nikki.quibin@gmail.com</a>
+            <ul class="icon-links">
+                <li>
+                    <a href="https://www.linkedin.com/in/nikki-louis-quibin-539ba796/" target="_blank">
+                        <img src="src/media/linkedin_icon.png" alt="Linked In link" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/NQuibin" target="_blank">
+                        <img src="src/media/github_icon.png" alt="Github link" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/nik._q/?hl=en" target="_blank">
+                        <img src="src/media/instagram_icon.png" alt="Instagram link" />
+                    </a>
+                </li>
+            </ul>
+            <a href="todo">Download Resume</a>
+        </div>
+        <div id="summary" class="grid-item-summary">
+            <h1>Summary</h1>
+            <p>
+                I don't say much but I have a passion for technology and self-growth.
+                Moreover, I love building new things and coding is a great medium to
+                do so.
+            </p>
+
+            <div>
+                <h2>Education</h2>
+                <h3>University of Toronto - Honours Bachelor of Science (BSc.)</h3>
+                <h3>Computer Science</h3>
+                <p>2014-2018. Information Systems Specialist.</p>
+            </div>
+
+            <div>
+                <h2>Experience</h2>
+                <div>
+                    <h3>Loopio Inc.</h3>
+                    <h3>2018 - Present</h3>
+                    <h4>Full Stack Software Developer</h4>
+                    <p>
+                    Develop new features for their SaaS platform in a LAMP stack environment
+                    with various technologies used, such as React and Redux.
+                    </p>
+                </div>
+                <div>
+                    <h3>Canada Revenue Agency</h3>
+                    <h3>2017 - 2018</h3>
+                    <h4>Program Officer</h4>
+                    <p>
+                    Developed tools and macros in Python and VBA for auditors to speed up the
+                    auditing process.
+                    </p>
+                </div>
+                <div>
+                    <h3>Defence Research Development Canada</h3>
+                    <h3>2017</h3>
+                    <h4>Research Assistant</h4>
+                    <p>
+                    Aided Scientists with their research projects by creating Java applications
+                    to demo and model their hypotheses.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="skills" class="grid-item-skills">
+            <h1>Skills & Interests</h1>
+            <div>
+                <h2>Programming Languages</h2>
+                <div>
+                    <h3>HTML & CSS</h3>
+                    <span class="skill-block--filled"></span>
+                    <span class="skill-block--filled"></span>
+                    <span class="skill-block--filled"></span>
+                    <span class="skill-block--filled"></span>
+                    <span class="skill-block--half-filled"></span>
+                </div>
+                <div>
+                    <h3>JavaScript</h3>
+                    <span class="skill-block--filled"></span>
+                    <span class="skill-block--filled"></span>
+                    <span class="skill-block--filled"></span>
+                    <span class="skill-block--filled"></span>
+                    <span class="skill-block--half-filled"></span>
+                </div>
+                <div>
+                    <h3>PHP</h3>
+                    <span class="skill-block--filled"></span>
+                    <span class="skill-block--filled"></span>
+                    <span class="skill-block--filled"></span>
+                    <span class="skill-block--filled"></span>
+                    <span class="skill-block"></span>
+                </div>
+                <div id="programmingLanguages" class="collapsible">
+                    <div>
+                        <h3>SQL</h3>
+                        <span class="skill-block--filled"></span>
+                        <span class="skill-block--filled"></span>
+                        <span class="skill-block--filled"></span>
+                        <span class="skill-block--filled"></span>
+                        <span class="skill-block"></span>
+                    </div>
+                    <div>
+                        <h3>Python</h3>
+                        <span class="skill-block--filled"></span>
+                        <span class="skill-block--filled"></span>
+                        <span class="skill-block--filled"></span>
+                        <span class="skill-block"></span>
+                        <span class="skill-block"></span>
+                    </div>
+                    <div>
+                        <h3>Java</h3>
+                        <span class="skill-block--filled"></span>
+                        <span class="skill-block--filled"></span>
+                        <span class="skill-block--filled"></span>
+                        <span class="skill-block"></span>
+                        <span class="skill-block"></span>
+                    </div>
+                    <div>
+                        <h3>Go - In Progress</h3>
+                        <span class="skill-block--disabled"></span>
+                        <span class="skill-block--disabled"></span>
+                        <span class="skill-block--disabled"></span>
+                        <span class="skill-block--disabled"></span>
+                        <span class="skill-block--disabled"></span>
+                    </div>
+                </div>
+                <button class="expand" data-target-id="programmingLanguages">more +</button>
+            </div>
+            <div>
+                <h2>Technologies</h2>
+                <div>
+                    <h3>Node.js</h3>
+                    <span class="skill-block--filled"></span>
+                    <span class="skill-block--filled"></span>
+                    <span class="skill-block--filled"></span>
+                    <span class="skill-block--filled"></span>
+                    <span class="skill-block"></span>
+                </div>
+                <div>
+                    <h3>React & Redux</h3>
+                    <span class="skill-block--filled"></span>
+                    <span class="skill-block--filled"></span>
+                    <span class="skill-block--filled"></span>
+                    <span class="skill-block--filled"></span>
+                    <span class="skill-block--half-filled"></span>
+                </div>
+                <div>
+                    <h3>jQuery</h3>
+                    <span class="skill-block--filled"></span>
+                    <span class="skill-block--filled"></span>
+                    <span class="skill-block--filled"></span>
+                    <span class="skill-block--filled"></span>
+                    <span class="skill-block"></span>
+                </div>
+                <div id="technologies" class="collapsible">
+                    <div>
+                        <h3>CodeIgniter</h3>
+                        <span class="skill-block--filled"></span>
+                        <span class="skill-block--filled"></span>
+                        <span class="skill-block--filled"></span>
+                        <span class="skill-block"></span>
+                        <span class="skill-block"></span>
+                    </div>
+                    <div>
+                        <h3>OS (Linux, OSX, Windows)</h3>
+                        <span class="skill-block--filled"></span>
+                        <span class="skill-block--filled"></span>
+                        <span class="skill-block--half-filled"></span>
+                        <span class="skill-block"></span>
+                        <span class="skill-block"></span>
+                    </div>
+                    <div>
+                        <h3>Flask - In Progress</h3>
+                        <span class="skill-block--disabled"></span>
+                        <span class="skill-block--disabled"></span>
+                        <span class="skill-block--disabled"></span>
+                        <span class="skill-block--disabled"></span>
+                        <span class="skill-block--disabled"></span>
+                    </div>
+                </div>
+                <button class="expand" data-target-id="technologies">more +</button>
+            </div>
+            <div>
+                <h2>Interests</h2>
+                <ul>
+                    <li>&#x1F354 Food!</li>
+                    <li>&#x1F4B8 Finance & Investment</li>
+                    <li>&#x1F3AE Video Games</li>
+                    <li>&#x1F3C0 Basketball</li>
+                    <li>&#x1F698 Automobiles</li>
+                </ul>
+            </div>
+        </div>
+        <div class="grid-item-footer">
+            <ul class="icon-links">
+                <li>
+                    <a href="https://www.linkedin.com/in/nikki-louis-quibin-539ba796/" target="_blank">
+                        <img src="src/media/linkedin_icon.png" alt="Linked In link" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/NQuibin" target="_blank">
+                        <img src="src/media/github_icon.png" alt="Github link" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/nik._q/?hl=en" target="_blank">
+                        <img src="src/media/instagram_icon.png" alt="Instagram link" />
+                    </a>
+                </li>
+            </ul>
+            <p>
+                &copy; 2019 by Nikki Louis Quibin. Created with
+                <a href="https://sass-lang.com/">Sass</a>
+                and
+                <a href="https://jquery.com/">jQuery</a>.
+            </p>
         </div>
     </div>
 </body>

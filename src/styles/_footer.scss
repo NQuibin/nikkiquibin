@@ -1,0 +1,15 @@
+@import 'colours';
+
+.grid-item-footer {
+    grid-area: footer;
+    text-align: center;
+    background-color: $secondary-color;
+
+    a {
+        color: $text-color;
+    }
+
+    > p {
+        margin-top: 15px;
+    }
+}

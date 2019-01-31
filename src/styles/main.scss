@@ -1,0 +1,99 @@
+@import 'colours';
+@import 'fonts';
+@import 'navbar';
+@import 'header';
+@import 'subheader';
+@import 'summary';
+@import 'skills';
+@import 'footer';
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-main;
+}
+
+html {
+    font-size: 16px;
+}
+
+html, body {
+    background-color: $primary-color;
+    color: $text-color;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "navbar"
+        "header"
+        "subheader"
+        "summary"
+        "skills"
+        "footer";
+
+}
+
+.grid-item-subheader,
+.grid-item-summary,
+.grid-item-about,
+.grid-item-experience,
+.grid-item-skills,
+.grid-item-footer {
+    padding: 40px 30px;
+}
+
+.grid-item-summary,
+.grid-item-about,
+.grid-item-experience,
+.grid-item-skills {
+    > h1 {
+        text-transform: uppercase;
+        margin-bottom: 25px;
+    }
+}
+
+#top {
+    display: none;
+    position: fixed;
+    z-index: 99;
+    bottom: 10px;
+    right: 10px;
+    padding: 5px;
+    background-color: $primary-color;
+    border: 1px solid $text-color;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.icon-links {
+    list-style: none;
+
+    > li {
+        display: inline-block;
+        margin: 0 20px;
+    }
+}
+
+/** Media Queries **/
+
+//@media screen and (min-width: 768px) {
+//
+//    .grid-item-subheader,
+//    .grid-item-about,
+//    .grid-item-experience,
+//    .grid-item-skills,
+//    .grid-item-footer {
+//        padding: 40px 150px;
+//    }
+//}
+//
+//@media screen and (min-width: 1024px) {
+//
+//}
+

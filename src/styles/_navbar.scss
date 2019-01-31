@@ -1,0 +1,76 @@
+@import 'colours';
+
+.grid-item-navbar {
+    grid-area: navbar;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 102;
+    width: 100%;
+    text-align: right;
+
+    .bar-container {
+        display: inline-block;
+        margin: 15px 20px;
+        cursor: pointer;
+        transition: 0.4s;
+
+        .bar1, .bar2, .bar3 {
+            display: block;
+            width: 30px;
+            height: 5px;
+            margin: 6px 0;
+            border-radius: 5px;
+            background-color: $tertiary-color;
+            transition: 0.4s;
+        }
+    }
+
+    .change {
+        transform: rotate(90deg);
+
+        .bar1 {
+            transform: rotate(45deg) translate(8px, 9px);
+        }
+
+        .bar2 {
+            opacity: 0;
+        }
+
+        .bar3 {
+            transform: rotate(-45deg) translate(7px, -8px);
+        }
+    }
+}
+
+.navbar {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 101;
+    background-color: $primary-color;
+
+    > ul {
+        width: 100%;
+        height: 100%;
+        margin-top: 100px;
+        flex-direction: column;
+        list-style: none;
+        font-size: 1.5rem;
+        text-align: center;
+
+        > li {
+            display: block;
+            margin: 0 35px;
+            padding: 15px 0;
+
+            > a {
+                text-decoration: none;
+                color: $tertiary-color;
+            }
+        }
+    }
+}
