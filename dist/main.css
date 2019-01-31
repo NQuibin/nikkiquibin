@@ -257,5 +257,8 @@ html, body {
     display: inline-block;
     margin: 0 20px; }
 
+#ok {
+  display: none; }
+
 /** Media Queries **/
 
