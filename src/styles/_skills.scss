@@ -97,3 +97,15 @@ $empty-block: #ebebeb;
         }
     }
 }
+
+@media screen and (min-width: 1280px) {
+
+    .grid-item-skills > div {
+        display: inline-block;
+        vertical-align: top;
+
+        &:first-of-type {
+            margin-right: 150px;
+        }
+    }
+}

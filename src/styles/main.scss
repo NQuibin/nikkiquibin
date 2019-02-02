@@ -102,3 +102,14 @@ html, body {
     }
 }
 
+@media screen and (min-width: 1280px) {
+
+    .grid-item-subheader,
+    .grid-item-summary,
+    .grid-item-experience,
+    .grid-item-skills,
+    .grid-item-footer {
+        padding: 60px 260px;
+    }
+}
+
