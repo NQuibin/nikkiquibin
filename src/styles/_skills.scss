@@ -86,10 +86,14 @@ $empty-block: #ebebeb;
 
 /** Media Queries **/
 
-//@media screen and (min-width: 768px) {
-//
-//    %skill-block-shared {
-//        width: 70px;
-//    }
-//
-//}
+@media screen and (min-width: 1024px) {
+
+    .grid-item-skills > div {
+        display: inline-block;
+        vertical-align: top;
+
+        &:first-of-type {
+            margin-right: 100px;
+        }
+    }
+}

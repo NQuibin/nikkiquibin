@@ -1,5 +1,7 @@
 const path = require('path');
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 module.exports = {
 	entry: './src/js/app.js',
@@ -8,6 +10,11 @@ module.exports = {
 		path: path.resolve(__dirname, 'dist'),
 		filename: 'bundle.js',
 		publicPath: './'
+	},
+
+	devServer: {
+		historyApiFallback: true,
+		publicPath: '/dist'
 	},
 
 	module: {
@@ -34,11 +41,19 @@ module.exports = {
 						options: {
 							bypassOnDebug: true, // webpack@1.x
 							disable: true, // webpack@2.x and newer
-							outputPath: 'images'
 						},
 					},
 				],
 			}
+		]
+	},
+
+	optimization: {
+		minimizer: [
+			new UglifyJsPlugin({
+				parallel: true
+			}),
+			new OptimizeCSSAssetsPlugin({})
 		]
 	},
 

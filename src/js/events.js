@@ -6,19 +6,26 @@ export const init = () => {
             $barContainer.on('click', e => {
                 const $this = $(e.currentTarget);
                 const $navbar = $('.navbar');
+                const $gridNavbar = $('.grid-item-navbar');
                 const $body = $('body');
+                const windowWidth = $(window).width();
 
-                if ($navbar.css('display') === 'none') {
-                    $navbar.slideDown(150);
+                if (windowWidth >= 1024) {
+                    $navbar.animate({width:'toggle'}, 150);
+                    $gridNavbar.toggleClass('sticky');
                 } else {
-                    $navbar.slideUp(150);
+                    if ($navbar.css('display') === 'none') {
+                        $navbar.slideDown(150);
+                    } else {
+                        $navbar.slideUp(150);
+                    }
+
+                    $body.css('overflow', () => {
+                        return $body.css('overflow') === 'hidden' ? '' : 'hidden';
+                    });
                 }
 
                 $this.toggleClass('change');
-
-                $body.css('overflow', () => {
-                    return $body.css('overflow') === 'hidden' ? '' : 'hidden';
-                });
             });
         };
 

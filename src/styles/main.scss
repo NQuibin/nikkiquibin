@@ -36,16 +36,14 @@ html, body {
         "summary"
         "skills"
         "footer";
-
 }
 
 .grid-item-subheader,
 .grid-item-summary,
-.grid-item-about,
 .grid-item-experience,
 .grid-item-skills,
 .grid-item-footer {
-    padding: 40px 30px;
+    padding: 60px 70px;
 }
 
 .grid-item-summary,
@@ -82,18 +80,25 @@ html, body {
 
 /** Media Queries **/
 
-//@media screen and (min-width: 768px) {
-//
-//    .grid-item-subheader,
-//    .grid-item-about,
-//    .grid-item-experience,
-//    .grid-item-skills,
-//    .grid-item-footer {
-//        padding: 40px 150px;
-//    }
-//}
-//
-//@media screen and (min-width: 1024px) {
-//
-//}
+@media screen and (min-width: 768px) {
+
+    .grid-item-subheader,
+    .grid-item-summary,
+    .grid-item-experience,
+    .grid-item-skills,
+    .grid-item-footer {
+        padding: 60px 120px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .grid-item-subheader,
+    .grid-item-summary,
+    .grid-item-experience,
+    .grid-item-skills,
+    .grid-item-footer {
+        padding: 60px 160px;
+    }
+}
 
