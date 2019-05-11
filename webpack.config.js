@@ -62,5 +62,10 @@ module.exports = {
 			filename: '[name].css',
 			chunkFilename: '[id].css'
 		})
-	]
+	],
+
+	watchOptions: {
+		aggregateTimeout: 600,
+		ignored: /node_modules/
+	}
 };
