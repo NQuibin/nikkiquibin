@@ -1,9 +1,5 @@
 @import 'vars';
-
-@mixin text-outline($color) {
-    text-shadow: 0 0 3px $color;
-    -webkit-font-smoothing: antialiased;
-}
+@import 'mixins';
 
 @mixin content-item-style($background-color, $color) {
     background-color: $background-color;

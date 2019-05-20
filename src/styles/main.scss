@@ -1,5 +1,8 @@
 @import 'vars';
+@import 'mixins';
+@import 'header';
 @import 'content';
+@import 'footer';
 
 * {
     margin: 0;
@@ -30,61 +33,6 @@ body {
     padding: 50px 25px;
 }
 
-.grid-item-header {
-    grid-area: header;
-    text-align: center;
-
-    h1, h3 {
-        padding: 5px;
-    }
-
-    h1 {
-        font-family: $font-alt;
-        font-size: 2.4rem;
-    }
-
-    h3 {
-        font-size: 1.5rem;
-
-        &:nth-of-type(2) {
-            text-transform: uppercase;
-        }
-    }
-}
-
-.grid-item-info {
-    grid-area: info;
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 25px;
-
-    div {
-        display: inline-block;
-
-        img {
-            width: 16px;
-            height: 16px;
-        }
-    }
-}
-
-.grid-item-social {
-    grid-area: social;
-    display: flex;
-    margin: 25px 50px;
-    justify-content: space-evenly;
-
-    div {
-        display: inline-block;
-
-        img {
-            width: 32px;
-            height: 32px;
-            vertical-align: middle;
-        }
-    }
-}
-
 .grid-item-divider {
     grid-area: divider;
     width: 100%;
@@ -92,38 +40,7 @@ body {
     background-color: $divider-color;
 }
 
-.footer {
-    padding: 40px;
-    text-align: center;
-    background-color: $secondary-color;
-    color: $text-alt-color;
-
-    p:first-of-type {
-        margin-bottom: 10px;
-        color: $text-ter-color;
-    }
-
-    p:nth-of-type(2)::after {
-        content: '';
-        display: block;
-        width: 100px;
-        height: 1px;
-        margin: 25px auto;
-        background-color: $primary-color;
-    }
-
-    a {
-        text-decoration: underline;
-        color: $text-alt-color;
-    }
-
-    img {
-        width: 48px;
-        height: 48px;
-        margin-bottom: 10px;
-    }
-}
-
 .hide {
     display: none !important;
 }
+
