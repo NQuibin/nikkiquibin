@@ -6,25 +6,25 @@
 /* Media queries */
 
 @mixin for-small-phone-only {
-    @media (max-width: 320px) {
+    @media (max-width: 410px) {
         @content;
     }
 }
 
 @mixin for-medium-phone-only {
-    @media (min-width: 321px) {
+    @media (min-width: 411px) and (max-width: 500px) {
         @content;
     }
 }
 
 @mixin for-large-phone-only {
-    @media (min-width: 425px) {
+    @media (min-width: 501px) and (max-width: 599px) {
         @content;
     }
 }
 
 @mixin for-tablet-only {
-    @media (min-width: 768px) {
+    @media (min-width: 600px) {
         @content;
     }
 }
