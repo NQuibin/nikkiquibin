@@ -30,7 +30,7 @@
     margin-bottom: 25px;
 
     div {
-        flex-basis: 33%;
+        flex-basis: 120px;
         margin: 0 15px;
         padding: 5px;
         text-align: center;
@@ -55,7 +55,7 @@
 .grid-item-social {
     grid-area: social;
     display: flex;
-    margin: 25px 50px;
+    margin: 25px 50px 50px;
     justify-content: center;
 
     div {
