@@ -54,18 +54,27 @@
             padding-top: 10px;
             border-top: 0.5px solid $divider-color;
         }
+    }
 
-        @include for-small-phone-only {
+    @include for-small-phone-only {
+        .exp-content,
+        .project-content {
             display: grid;
             grid-template-rows: 100%;
             grid-template-columns: repeat(2, 1fr);
             grid-gap: 30px;
             padding: 25px 5%;
+        }
 
-            div {
-                grid-row: 1;
-                grid-column: 2;
-            }
+        .exp-content div {
+            grid-row: 1;
+            grid-column: 2;
+        }
+
+        .project-content div {
+            grid-row: 1;
+            grid-column: 1 / 3;
+            padding: 0 20%;
         }
     }
 }
