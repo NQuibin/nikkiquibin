@@ -54,18 +54,37 @@
             padding-top: 10px;
             border-top: 0.5px solid $divider-color;
         }
-    }
 
-    @include for-small-phone-only {
-        .exp-content,
-        .project-content {
-            display: grid;
-            grid-template-rows: 100%;
-            grid-template-columns: repeat(2, 1fr);
-            grid-gap: 30px;
-            padding: 25px 5%;
+        @include for-medium-phone-only {
+            padding: 25px 50px;
         }
 
+        @include for-large-phone-only {
+            padding: 25px 75px;
+        }
+
+        @include for-small-tablet-only {
+            padding: 25px 100px;
+        }
+
+        @include for-tablet-only {
+            display: grid;
+            grid-template-rows: 100%;
+            grid-template-columns: 1fr 2fr;
+            grid-gap: 30px;
+            padding: 25px 5%;
+
+            @include for-laptop-only {
+                padding: 25px 15%;
+            }
+
+            @include for-larger-devices {
+                padding: 25px 25%;
+            }
+        }
+    }
+
+    @include for-tablet-only {
         .exp-content div {
             grid-row: 1;
             grid-column: 2;
