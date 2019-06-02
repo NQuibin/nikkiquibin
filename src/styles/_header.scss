@@ -5,7 +5,7 @@
     grid-area: header;
     text-align: center;
 
-    h1, h3 {
+    h1, h3, p {
         padding: 5px;
     }
 
@@ -20,6 +20,11 @@
         &:nth-of-type(2) {
             text-transform: uppercase;
         }
+    }
+
+    p {
+        width: 285px;
+        margin: 0 auto;
     }
 }
 
