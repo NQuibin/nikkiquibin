@@ -43,6 +43,22 @@ $content-padding: 25px;
                 margin-right: 0.7rem;
                 vertical-align: text-top;
             }
+
+            a {
+                text-decoration: none;
+
+                img {
+                    display: none;
+                    width: 0.75rem;
+                    height: 0.75rem;
+                    margin-left: 0.5rem;
+                    vertical-align: middle;
+                }
+
+                &:hover img {
+                    display: inline-block;
+                }
+            }
         }
 
         p {
