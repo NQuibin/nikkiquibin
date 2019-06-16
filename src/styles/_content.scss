@@ -135,6 +135,10 @@ $content-padding: 25px;
             font-style: italic;
         }
 
+        p {
+            margin-bottom: 10px;
+        }
+
         @include for-tablet-only {
             div {
                 grid-row: 1;
