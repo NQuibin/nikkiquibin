@@ -3,79 +3,72 @@
 
 .grid-item-header {
     grid-area: header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
     text-align: center;
+    flex-wrap: wrap;
 
-    h1, h3, p {
-        padding: 5px;
+    .profile-picture,
+    .profile-info {
+        padding: 0 15px;
     }
 
-    h1 {
-        font-family: $font-alt;
-        font-size: 2.4rem;
-    }
-
-    h3 {
-        font-size: 1.5rem;
-    }
-
-    p {
-        width: 300px;
-        margin: 0 auto;
-    }
-}
-
-.grid-item-info {
-    grid-area: info;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 25px;
-
-    div {
-        flex-basis: 120px;
-        margin: 0 15px;
-        padding: 5px;
-        text-align: center;
-        background-color: $quaternary-color;
-        border-radius: 15px;
-
-        &:hover {
-            opacity: 0.7;
-            cursor: pointer;
+    .profile-picture {
+        h1 {
+            padding: 5px 0 25px 0;
+            font-family: $font-alt;
+            font-size: 2.4rem;
         }
 
-        img {
-            width: 1.1rem;
-            height: 1.1rem;
-            vertical-align: text-top;
+        h3 {
+            font-size: 1.5rem;
         }
+    }
 
+    .profile-info {
         a {
-            color: white;
+            margin: 0 10px;
             text-decoration: none;
-            text-transform: uppercase;
-            font-weight: bold;
-        }
-    }
-}
 
-.grid-item-social {
-    grid-area: social;
-    display: flex;
-    margin: 25px 50px 50px;
-    justify-content: center;
-
-    div {
-        display: inline-block;
-        margin: 0 15px;
-
-        &:hover {
-            opacity: 0.7;
+            &:hover {
+                cursor: pointer;
+                opacity: 0.7;
+            }
         }
 
-        img {
-            width: 32px;
-            height: 32px;
-            vertical-align: middle;
+        .profile-info__links {
+            a {
+                display: inline-block;
+                width: 120px;
+                padding: 5px;
+                color: white;
+                text-transform: uppercase;
+                font-weight: bold;
+                background-color: $quaternary-color;
+                border-radius: 15px;
+
+                img {
+                    width: 1.1rem;
+                    height: 1.1rem;
+                    vertical-align: text-top;
+
+                }
+            }
+        }
+
+        .profile-info__description {
+            width: 300px;
+            margin: 25px auto;
+        }
+
+        .profile-info__social {
+            img {
+                width: 32px;
+                height: 32px;
+                vertical-align: middle;
+            }
         }
     }
 }
