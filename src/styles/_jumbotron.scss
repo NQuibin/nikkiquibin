@@ -1,13 +1,15 @@
 .grid-item-jumbotron {
     grid-area: jumbotron;
-    height: 50vh;
+    height: 75vh;
+    background: url(../assets/background.jpg) no-repeat center center scroll;
+    background-size: cover;
 
     div {
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(55, 55, 55, 0.5);
 
         h3 {
             margin: 50px;

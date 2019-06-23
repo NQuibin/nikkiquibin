@@ -16,6 +16,15 @@
     }
 
     .profile-picture {
+        // replace with img
+        div {
+            width: 250px;
+            height: 250px;
+            margin: 0 auto 25px auto;
+            border: 1px solid $divider-color;
+            border-radius: 100%;
+        }
+
         h1 {
             padding: 5px 0 25px 0;
             font-family: $font-alt;
