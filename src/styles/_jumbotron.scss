@@ -1,8 +1,14 @@
+@import 'mixins';
+
 .grid-item-jumbotron {
     grid-area: jumbotron;
     height: 75vh;
     background: url(../assets/background.jpg) no-repeat center center scroll;
     background-size: cover;
+
+    @include for-small-tablet-and-below {
+        height: 30vh;
+    }
 
     div {
         display: flex;
