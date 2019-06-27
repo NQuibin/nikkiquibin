@@ -36,11 +36,11 @@
 
     .profile-picture {
         // replace with img
-        div {
+        img {
             width: 250px;
             height: 250px;
             margin: 0 auto 25px auto;
-            border: 1px solid $divider-color;
+            box-shadow: 0 0 10px 3px #373737;
             border-radius: 100%;
         }
 
