@@ -1,71 +1,115 @@
-@import 'colours';
+@import 'vars';
+@import 'mixins';
+
+@mixin default-text-shadow {
+    text-shadow: 0 0 5px $text-color;
+}
 
 .grid-item-header {
-    position: relative;
     grid-area: header;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
     text-align: center;
+    flex-wrap: wrap;
+    color: $text-alt-color;
+    background: url(../assets/background.jpg) no-repeat center center scroll;
 
-    h1, h2 {
-        padding: 0 20px;
-    }
-
-    .header-background {
+    &:after {
+        content: ' ';
         position: absolute;
         z-index: 99;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        background: $primary-color url('../media/header_background.jpg') center no-repeat scroll;
-        background-size: cover;
+        background-color: rgba(105, 105, 105, 0.3);
     }
 
-    .header-content {
-        position: relative;
+    .profile-picture,
+    .profile-info {
         z-index: 100;
-        padding: 150px 0 110px 0;
-        background-color: rgba(40, 40, 40, 0.75);
+        padding: 0 15px;
+    }
 
-        h1 {
-            text-transform: uppercase;
-            font-size: 3rem;
+    .profile-picture {
+        img {
+            width: 250px;
+            height: 250px;
+            margin: 0 auto 25px auto;
+            box-shadow: 0 0 10px 3px $box-shadow-prof-pic-color;
+            border-radius: 100%;
         }
 
-        h2 {
-            font-size: 1.6rem;
+        h1, h3 {
+            @include default-text-shadow();
+        }
 
-            &:last-of-type {
-                margin-top: 50px;
-                text-transform: none;
+        h1 {
+            padding: 5px 0 25px 0;
+            font-family: $font-alt;
+            font-size: 2.4rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+        }
+    }
+
+    .profile-info {
+        a {
+            margin: 0 10px;
+            text-decoration: none;
+
+            &:hover {
+                cursor: pointer;
+                opacity: 0.7;
             }
         }
 
-        span {
-            color: $tertiary-color;
+        .profile-info__links {
+            a {
+                display: inline-block;
+                width: 120px;
+                padding: 5px;
+                color: white;
+                text-transform: uppercase;
+                font-weight: bold;
+                background-color: $quaternary-color;
+                border-radius: 15px;
+                border: 1px solid $text-alt-color;
+
+                img {
+                    width: 1.2rem;
+                    height: 1.2rem;
+                    vertical-align: text-top;
+
+                }
+            }
+        }
+
+        .profile-info__description {
+            @include default-text-shadow();
+
+            width: 300px;
+            margin: 25px auto;
+            font-size: 1.15rem;
+        }
+
+        .profile-info__social {
+            display: inline-block;
+
+            img {
+                width: 42px;
+                height: 42px;
+                padding: 3px;
+                vertical-align: middle;
+                background-color: $text-alt-color;
+                border-radius: 25%;
+                border: 2px solid $border-color;
+            }
         }
     }
-}
-
-/** Media Queries **/
-
-@media screen and (min-width: 768px) {
-
-    .grid-item-header {
-
-        .header-content {
-            padding: 220px 0 180px 0;
-        }
-    }
-
-}
-
-@media screen and (min-width: 1024px) {
-
-    .grid-item-header {
-
-        .header-content {
-            padding: 300px 0 260px 0;
-        }
-    }
-
 }
