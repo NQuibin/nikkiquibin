@@ -114,6 +114,10 @@ $content-padding: 25px;
             background-color: white;
             border-radius: 25px;
             border: 1px solid $divider-color;
+            box-shadow: -5px 5px 5px 0 $box-shadow-color;
+        }
+
+        &:nth-of-type(even) > img {
             box-shadow: 5px 5px 5px 0 $box-shadow-color;
         }
 
