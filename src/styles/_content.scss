@@ -65,7 +65,10 @@ $content-padding: 25px;
 
         p {
             padding-top: 10px;
-            border-top: 0.5px solid $divider-color;
+
+            &:first-of-type {
+                border-top: 0.5px solid $divider-color;
+            }
         }
 
         @include for-medium-phone-only {
