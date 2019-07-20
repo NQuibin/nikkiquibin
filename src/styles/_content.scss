@@ -69,15 +69,15 @@ $content-padding: 25px;
         }
 
         @include for-medium-phone-only {
-            padding: $content-padding 50px;
+            padding: $content-padding 15%;
         }
 
         @include for-large-phone-only {
-            padding: $content-padding 75px;
+            padding: $content-padding 20%;
         }
 
         @include for-small-tablet-only {
-            padding: $content-padding 100px;
+            padding: $content-padding 25%;
         }
 
         @include for-tablet-only {
