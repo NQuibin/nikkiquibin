@@ -1,18 +1,19 @@
 import React from 'react'
 import { Grid, Divider, Button } from '@material-ui/core'
-import PersonIcon from '@material-ui/icons/Person';
+import PersonIcon from '@material-ui/icons/Person'
+import { Title, Subtitle } from './StyledText'
 
 const Header = () => (
   <Grid container direction="column">
     <Grid item>
-      <h1>
+      <Title>
         <span role="img" aria-label="wave emoji">
           👋
         </span>{' '}
         Hi, I'm Nikki&nbsp;Louis&nbsp;Quibin
-      </h1>
+      </Title>
       <Divider />
-      <h2>Software Developer</h2>
+      <Subtitle>Software Developer</Subtitle>
       <Button
         variant="outlined"
         startIcon={<PersonIcon />}
