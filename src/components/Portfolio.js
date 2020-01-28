@@ -1,10 +1,11 @@
 import React from 'react'
 import { Grid } from '@material-ui/core'
+import { Text } from './Text'
 
 const Portfolio = () => (
   <Grid container>
     <Grid item>
-      <h1>Portfolio</h1>
+      <Text variant="title">Portfolio</Text>
     </Grid>
   </Grid>
 )

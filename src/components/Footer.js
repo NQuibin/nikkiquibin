@@ -1,18 +1,22 @@
 import React from 'react'
-import { Grid } from '@material-ui/core'
+import { Grid, Divider } from '@material-ui/core'
+import { Text } from './Text'
 
 const Footer = () => (
   <Grid container>
-    <Grid item>
-      <p>
-        Interested in working with me? Contact me at
-        <a href="mailto:nikki.quibin@gmail.com">nikki.quibin@gmail.com</a>
-      </p>
-      <p>Nikki Louis Quibin</p>
-      <p>Created with React and Material UI</p>
-      <p>
+    <Grid item xs={12}>
+      <Text>
+        Interested in working with me? Contact me at{' '}
+        <a href="mailto:nikki.quibin@gmail.com">nikki.quibin@gmail.com</a>.
+      </Text>
+      <Divider />
+      <Text>
+        <strong>Nikki Louis Quibin</strong>
+      </Text>
+      <Text>Created with React and Material UI</Text>
+      <Text>
         © Copyright <strong>2010 - 2020</strong>
-      </p>
+      </Text>
     </Grid>
   </Grid>
 )
