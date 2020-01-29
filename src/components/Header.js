@@ -1,11 +1,12 @@
 import React from 'react'
 import { Grid, Divider, Button } from '@material-ui/core'
 import PersonIcon from '@material-ui/icons/Person'
-import { Text } from './Text'
+import PageContainer from './PageContainer'
+import Text from './Text'
 
 const Header = () => (
-  <Grid container direction="column">
-    <Grid item>
+  <PageContainer container textCenter direction="column" alignItems="center">
+    <Grid item xs={12}>
       <Text variant="title">
         <span role="img" aria-label="wave emoji">
           👋
@@ -23,7 +24,7 @@ const Header = () => (
         Resume
       </Button>
     </Grid>
-  </Grid>
+  </PageContainer>
 )
 
 export default Header

@@ -1,4 +1,3 @@
-/* eslint-disable import/prefer-default-export */
 /* eslint-disable react/jsx-props-no-spreading */
 
 import React from 'react'
@@ -40,4 +39,4 @@ Text.propTypes = {
 
 Text.defaultProps = { variant: null }
 
-export { Text }
+export default Text
