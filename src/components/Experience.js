@@ -1,12 +1,12 @@
 import React from 'react'
 import { Grid } from '@material-ui/core'
-import PageContainer from './PageContainer'
-import Text from './Text'
+import Text from './common/Text'
+import PageTitle from './PageTitle'
 
 const Experience = () => (
-  <PageContainer container>
+  <Box container secondary>
     <Grid item>
-      <Text variant="title">Skills & Experience</Text>
+      <PageTitle title="Skills & Experience" />
     </Grid>
     <Grid item>
       <Text variant="sectionTitle">Frontend Technologies</Text>
@@ -29,7 +29,7 @@ const Experience = () => (
     <Grid item>
       <Text variant="subtitle">Where I've Worked</Text>
     </Grid>
-  </PageContainer>
+  </Box>
 )
 
 export default Experience
