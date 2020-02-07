@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.js": "/nikkiquibin/static/js/main.ca68f348.chunk.js",
-    "main.js.map": "/nikkiquibin/static/js/main.ca68f348.chunk.js.map",
+    "main.js": "/nikkiquibin/static/js/main.3b41bfa7.chunk.js",
+    "main.js.map": "/nikkiquibin/static/js/main.3b41bfa7.chunk.js.map",
     "runtime-main.js": "/nikkiquibin/static/js/runtime-main.4f499b4b.js",
     "runtime-main.js.map": "/nikkiquibin/static/js/runtime-main.4f499b4b.js.map",
-    "static/js/2.17ec367e.chunk.js": "/nikkiquibin/static/js/2.17ec367e.chunk.js",
-    "static/js/2.17ec367e.chunk.js.map": "/nikkiquibin/static/js/2.17ec367e.chunk.js.map",
+    "static/js/2.64052e73.chunk.js": "/nikkiquibin/static/js/2.64052e73.chunk.js",
+    "static/js/2.64052e73.chunk.js.map": "/nikkiquibin/static/js/2.64052e73.chunk.js.map",
     "index.html": "/nikkiquibin/index.html",
-    "precache-manifest.a832c49facd090bf8ee1738e94e18644.js": "/nikkiquibin/precache-manifest.a832c49facd090bf8ee1738e94e18644.js",
+    "precache-manifest.71d1b3cbf1ef0db23020c55de702e7a4.js": "/nikkiquibin/precache-manifest.71d1b3cbf1ef0db23020c55de702e7a4.js",
     "service-worker.js": "/nikkiquibin/service-worker.js",
-    "static/js/2.17ec367e.chunk.js.LICENSE": "/nikkiquibin/static/js/2.17ec367e.chunk.js.LICENSE",
+    "static/js/2.64052e73.chunk.js.LICENSE": "/nikkiquibin/static/js/2.64052e73.chunk.js.LICENSE",
     "static/media/headshot.jpg": "/nikkiquibin/static/media/headshot.9b9b3343.jpg",
-    "static/media/nikki_quibin_resume_2020-02-06.pdf": "/nikkiquibin/static/media/nikki_quibin_resume_2020-02-06.5c86c8ba.pdf"
+    "static/media/nikki_quibin_resume_2020-02-06.pdf": "/nikkiquibin/static/media/nikki_quibin_resume_2020-02-06.d838a7a3.pdf"
   },
   "entrypoints": [
     "static/js/runtime-main.4f499b4b.js",
-    "static/js/2.17ec367e.chunk.js",
-    "static/js/main.ca68f348.chunk.js"
+    "static/js/2.64052e73.chunk.js",
+    "static/js/main.3b41bfa7.chunk.js"
   ]
 }
