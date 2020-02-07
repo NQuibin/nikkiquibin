@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Box, IconButton, Divider } from '@material-ui/core'
+import { Box, IconButton, Divider, Slide } from '@material-ui/core'
 import LinkedInIcon from '@material-ui/icons/LinkedIn'
 import InstagramIcon from '@material-ui/icons/Instagram'
 import GitHubIcon from '@material-ui/icons/GitHub'
@@ -37,41 +37,40 @@ const StyledAnchor = styled.a`
 `
 
 const Footer = () => (
-  <Box textAlign="center">
-    <Divider />
-    <Box m={2}>
-      <StyledIconButton
-        disableRipple
-        href="https://www.linkedin.com/in/nikki-louis-quibin-539ba796/"
-        aria-label="linked in"
-      >
-        <LinkedInIcon />
-      </StyledIconButton>
-      <StyledIconButton
-        href="https://www.instagram.com/nik._q/?hl=en"
-        aria-label="instagram"
-      >
-        <InstagramIcon />
-      </StyledIconButton>
-      <StyledIconButton
-        href="https://github.com/NQuibin"
-        aria-label="github"
-      >
-        <GitHubIcon />
-      </StyledIconButton>
+  <Slide in direction="up" timeout={400}>
+    <Box textAlign="center">
+      <Divider />
+      <Box m={2}>
+        <StyledIconButton
+          disableRipple
+          href="https://www.linkedin.com/in/nikki-louis-quibin-539ba796/"
+          aria-label="linked in"
+        >
+          <LinkedInIcon />
+        </StyledIconButton>
+        <StyledIconButton
+          href="https://www.instagram.com/nik._q/?hl=en"
+          aria-label="instagram"
+        >
+          <InstagramIcon />
+        </StyledIconButton>
+        <StyledIconButton href="https://github.com/NQuibin" aria-label="github">
+          <GitHubIcon />
+        </StyledIconButton>
+      </Box>
+      <StyledText mb={1}>
+        Contact me at{' '}
+        <StyledAnchor href="mailto:nikki.quibin@gmail.com">
+          nikki.quibin@gmail.com
+        </StyledAnchor>
+        .
+      </StyledText>
+      <StyledText mb={1}>Created with React and Material UI.</StyledText>
+      <StyledText mb={0}>
+        © Copyright <strong>2010 - 2020</strong>.
+      </StyledText>
     </Box>
-    <StyledText mb={1}>
-      Contact me at{' '}
-      <StyledAnchor href="mailto:nikki.quibin@gmail.com">
-        nikki.quibin@gmail.com
-      </StyledAnchor>
-      .
-    </StyledText>
-    <StyledText mb={1}>Created with React and Material UI.</StyledText>
-    <StyledText mb={0}>
-      © Copyright <strong>2010 - 2020</strong>.
-    </StyledText>
-  </Box>
+  </Slide>
 )
 
 export default Footer
