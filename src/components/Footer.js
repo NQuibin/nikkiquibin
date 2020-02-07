@@ -13,7 +13,9 @@ import {
   SECONDARY_FONT
 } from '../constants'
 
-const StyledIconButton = styled(IconButton)`
+const StyledIconButton = styled(props => (
+  <IconButton disableRipple target="_blank" {...props} />
+))`
   margin: 0 4px;
   padding: 4px;
   background-color: ${TEXT_COLOUR};
@@ -41,15 +43,20 @@ const Footer = () => (
       <StyledIconButton
         disableRipple
         href="https://www.linkedin.com/in/nikki-louis-quibin-539ba796/"
-        target="_blank"
         aria-label="linked in"
       >
         <LinkedInIcon />
       </StyledIconButton>
-      <StyledIconButton aria-label="instagram">
+      <StyledIconButton
+        href="https://www.instagram.com/nik._q/?hl=en"
+        aria-label="instagram"
+      >
         <InstagramIcon />
       </StyledIconButton>
-      <StyledIconButton aria-label="github">
+      <StyledIconButton
+        href="https://github.com/NQuibin"
+        aria-label="github"
+      >
         <GitHubIcon />
       </StyledIconButton>
     </Box>
