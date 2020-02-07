@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.js": "/static/js/main.83749773.chunk.js",
+    "main.js.map": "/static/js/main.83749773.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.f805b5b9.js",
+    "runtime-main.js.map": "/static/js/runtime-main.f805b5b9.js.map",
+    "static/js/2.1113e4a5.chunk.js": "/static/js/2.1113e4a5.chunk.js",
+    "static/js/2.1113e4a5.chunk.js.map": "/static/js/2.1113e4a5.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.7c2720837af9e2a3a1332cb4d4bfa75e.js": "/precache-manifest.7c2720837af9e2a3a1332cb4d4bfa75e.js",
+    "service-worker.js": "/service-worker.js",
+    "static/js/2.1113e4a5.chunk.js.LICENSE": "/static/js/2.1113e4a5.chunk.js.LICENSE",
+    "static/media/headshot.jpg": "/static/media/headshot.9b9b3343.jpg",
+    "static/media/nikki_quibin_resume_2020-02-06.pdf": "/static/media/nikki_quibin_resume_2020-02-06.5c86c8ba.pdf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f805b5b9.js",
+    "static/js/2.1113e4a5.chunk.js",
+    "static/js/main.83749773.chunk.js"
+  ]
+}
