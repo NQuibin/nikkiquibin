@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/nikkiquibin/static/js/main.3b41bfa7.chunk.js",
-    "main.js.map": "/nikkiquibin/static/js/main.3b41bfa7.chunk.js.map",
+    "main.js": "/nikkiquibin/static/js/main.12366b87.chunk.js",
+    "main.js.map": "/nikkiquibin/static/js/main.12366b87.chunk.js.map",
     "runtime-main.js": "/nikkiquibin/static/js/runtime-main.4f499b4b.js",
     "runtime-main.js.map": "/nikkiquibin/static/js/runtime-main.4f499b4b.js.map",
     "static/js/2.64052e73.chunk.js": "/nikkiquibin/static/js/2.64052e73.chunk.js",
     "static/js/2.64052e73.chunk.js.map": "/nikkiquibin/static/js/2.64052e73.chunk.js.map",
     "index.html": "/nikkiquibin/index.html",
-    "precache-manifest.71d1b3cbf1ef0db23020c55de702e7a4.js": "/nikkiquibin/precache-manifest.71d1b3cbf1ef0db23020c55de702e7a4.js",
+    "precache-manifest.6a8a97672499cf7b34efe672a798e588.js": "/nikkiquibin/precache-manifest.6a8a97672499cf7b34efe672a798e588.js",
     "service-worker.js": "/nikkiquibin/service-worker.js",
     "static/js/2.64052e73.chunk.js.LICENSE": "/nikkiquibin/static/js/2.64052e73.chunk.js.LICENSE",
     "static/media/headshot.jpg": "/nikkiquibin/static/media/headshot.9b9b3343.jpg",
@@ -16,6 +16,6 @@
   "entrypoints": [
     "static/js/runtime-main.4f499b4b.js",
     "static/js/2.64052e73.chunk.js",
-    "static/js/main.3b41bfa7.chunk.js"
+    "static/js/main.12366b87.chunk.js"
   ]
 }
