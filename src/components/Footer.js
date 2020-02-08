@@ -67,7 +67,7 @@ const Footer = () => (
       </StyledText>
       <StyledText mb={1}>Created with React and Material UI.</StyledText>
       <StyledText mb={0}>
-        © Copyright <strong>2010 - 2020</strong>.
+        © Copyright <strong>2020</strong>.
       </StyledText>
     </Box>
   </Slide>
