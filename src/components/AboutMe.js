@@ -50,24 +50,24 @@ const AboutMe = () => {
         <Grid item xs={12} sm={8}>
           <Box pl={spacing / 2}>
             <Text>
-            <span role="img" aria-label="wave emoji">
-              👋
-            </span>
+              <span role="img" aria-label="wave emoji">
+                👋
+              </span>
               Hi, I'm Nikki.
             </Text>
             <Text>
               I'm a software developer, mainly focusing on web development.
               Programming is one of my favourite things to do since it allows me
-              to build awesome applications that are useful, entertaining, and so
-              much more. As a kid who enjoyed video games, I always felt that I
-              would want to have a career in tech and so I'm grateful to be given
-              that opportunity.
+              to build awesome applications that are useful, entertaining, and
+              so much more. As a kid who enjoyed video games, I always felt that
+              I would want to have a career in tech and so I'm grateful to be
+              given that opportunity.
             </Text>
             <Text>
               I believe in personal growth with the importance of being open
               minded about learning new things every day. The people around me
-              inspire and motivate me to do my best, and are like-minded with the
-              goal to succeed.
+              inspire and motivate me to do my best, and are like-minded with
+              the goal to succeed.
             </Text>
           </Box>
         </Grid>
@@ -104,8 +104,8 @@ const AboutMe = () => {
               </Text>
               <Text>
                 I LOVE FOOD! I'm open minded to all types of food and always
-                looking for new places to eat. My favourite is seafood, especially
-                raw oysters. Let me know your food suggestions!
+                looking for new places to eat. My favourite is seafood,
+                especially raw oysters. Let me know your food suggestions!
               </Text>
             </Grid>
           </Grid>
