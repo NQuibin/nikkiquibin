@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.js": "/nikkiquibin/static/js/main.fab410c2.chunk.js",
-    "main.js.map": "/nikkiquibin/static/js/main.fab410c2.chunk.js.map",
+    "main.js": "/nikkiquibin/static/js/main.5aaf5d15.chunk.js",
+    "main.js.map": "/nikkiquibin/static/js/main.5aaf5d15.chunk.js.map",
     "runtime-main.js": "/nikkiquibin/static/js/runtime-main.4f499b4b.js",
     "runtime-main.js.map": "/nikkiquibin/static/js/runtime-main.4f499b4b.js.map",
     "static/js/2.64052e73.chunk.js": "/nikkiquibin/static/js/2.64052e73.chunk.js",
     "static/js/2.64052e73.chunk.js.map": "/nikkiquibin/static/js/2.64052e73.chunk.js.map",
     "index.html": "/nikkiquibin/index.html",
-    "precache-manifest.94acd5f3988676031d5daf0795c92d09.js": "/nikkiquibin/precache-manifest.94acd5f3988676031d5daf0795c92d09.js",
+    "precache-manifest.f8a113c346db7ecb3e5a7cd883f3071a.js": "/nikkiquibin/precache-manifest.f8a113c346db7ecb3e5a7cd883f3071a.js",
     "service-worker.js": "/nikkiquibin/service-worker.js",
     "static/js/2.64052e73.chunk.js.LICENSE": "/nikkiquibin/static/js/2.64052e73.chunk.js.LICENSE",
-    "static/media/headshot.jpg": "/nikkiquibin/static/media/headshot.9b9b3343.jpg",
+    "static/media/headshot.jpg": "/nikkiquibin/static/media/headshot.6cdd11b7.jpg",
     "static/media/nikki_quibin_resume_2020-02-06.pdf": "/nikkiquibin/static/media/nikki_quibin_resume_2020-02-06.d838a7a3.pdf"
   },
   "entrypoints": [
     "static/js/runtime-main.4f499b4b.js",
     "static/js/2.64052e73.chunk.js",
-    "static/js/main.fab410c2.chunk.js"
+    "static/js/main.5aaf5d15.chunk.js"
   ]
 }
