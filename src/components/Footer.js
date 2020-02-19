@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Box, IconButton, Divider, Slide } from '@material-ui/core'
+import { Box, IconButton, Divider, Grow } from '@material-ui/core'
 import LinkedInIcon from '@material-ui/icons/LinkedIn'
 import InstagramIcon from '@material-ui/icons/Instagram'
 import GitHubIcon from '@material-ui/icons/GitHub'
@@ -37,7 +37,7 @@ const StyledAnchor = styled.a`
 `
 
 const Footer = () => (
-  <Slide in direction="up" timeout={400}>
+  <Grow in timeout={800}>
     <Box textAlign="center">
       <Divider />
       <Box m={2}>
@@ -70,7 +70,7 @@ const Footer = () => (
         © Copyright <strong>{new Date().getFullYear()}</strong>.
       </StyledText>
     </Box>
-  </Slide>
+  </Grow>
 )
 
 export default Footer
