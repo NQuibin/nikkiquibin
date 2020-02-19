@@ -52,8 +52,8 @@ const AboutMe = () => {
             <Text>
               <span role="img" aria-label="wave emoji">
                 👋
-              </span>
-              Hi, I'm Nikki.
+              </span>{' '}
+              Hi, I'm Nikki
             </Text>
             <Text>
               I'm a software developer, mainly focusing on web development.
