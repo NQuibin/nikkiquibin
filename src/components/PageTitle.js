@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { Box } from '@material-ui/core'
 import Text from './common/Text'
-import { PRIMARY_COLOUR, SECONDARY_COLOUR } from '../constants'
+import { PRIMARY_COLOUR, SECONDARY_COLOUR } from 'src/constants/styles'
 
 const StyledBackground = styled.span`
   position: absolute;

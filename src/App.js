@@ -6,11 +6,13 @@ import {
   createMuiTheme,
   ThemeProvider
 } from '@material-ui/core'
+import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom'
 
-import Navbar from './components/NavBar'
-import AboutMe from './components/AboutMe'
-import Footer from './components/Footer'
-import { PRIMARY_COLOUR } from './constants'
+import Navbar from 'src/components/NavBar'
+import AboutMe from 'src/components/AboutMe'
+import Experience from 'src/components/Experience'
+import Footer from 'src/components/Footer'
+import { PRIMARY_COLOUR } from 'src/constants/styles'
 
 const theme = createMuiTheme({
   palette: {
@@ -36,27 +38,35 @@ const theme = createMuiTheme({
 })
 
 const App = () => (
-  <ThemeProvider theme={theme}>
-    <CssBaseline />
-    <Container disableGutters maxWidth="md">
-      <Box
-        display="flex"
-        flexDirection="column"
-        justifyContent="center"
-        minHeight="100vh"
-      >
-        <Box px={4.5} py={2.25}>
-          <Navbar />
+  <BrowserRouter>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <Container disableGutters maxWidth="md">
+        <Box
+          display="flex"
+          flexDirection="column"
+          justifyContent="center"
+          minHeight="100vh"
+        >
+          <Box px={4.5} py={2.25}>
+            <Navbar />
+          </Box>
+          <Box px={4.5} py={2.25}>
+            <Switch>
+              <Route exact path="/" component={AboutMe} />
+              <Route path="/experience" component={Experience} />
+              <Route path="*">
+                <Redirect to="/" />
+              </Route>
+            </Switch>
+          </Box>
+          <Box px={4.5} py={2.25}>
+            <Footer />
+          </Box>
         </Box>
-        <Box px={4.5} py={2.25}>
-          <AboutMe />
-        </Box>
-        <Box px={4.5} py={2.25}>
-          <Footer />
-        </Box>
-      </Box>
-    </Container>
-  </ThemeProvider>
+      </Container>
+    </ThemeProvider>
+  </BrowserRouter>
 )
 
 export default App

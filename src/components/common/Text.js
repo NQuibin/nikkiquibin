@@ -8,7 +8,7 @@ import {
   PRIMARY_FONT,
   SECONDARY_FONT,
   DEFAULT_FONT_SIZE
-} from '../../constants'
+} from 'src/constants/styles'
 
 const VARIANTS = {
   h1: {

@@ -3,14 +3,12 @@ import styled from 'styled-components'
 import { Grid, Box, Button, Fade, useMediaQuery } from '@material-ui/core'
 import { useTheme } from '@material-ui/core/styles'
 import PersonIcon from '@material-ui/icons/Person'
-import SportsEsportsIcon from '@material-ui/icons/SportsEsports'
-import MonetizationOnIcon from '@material-ui/icons/MonetizationOn'
-import FastfoodIcon from '@material-ui/icons/Fastfood'
 
-import Text from './common/Text'
-import { SECONDARY_TEXT_COLOUR, SECONDARY_FONT } from '../constants'
-import headshot from '../assets/headshot.jpg'
-import resume from '../assets/nikki_quibin_resume_2020-02-06.pdf'
+import Text from 'src/components/common/Text'
+import { interests } from 'src/constants/interests'
+import { SECONDARY_TEXT_COLOUR, SECONDARY_FONT } from 'src/constants/styles'
+import headshot from 'src/assets/headshot.jpg'
+import resume from 'src/assets/nikki_quibin_resume_2020-02-06.pdf'
 
 const StyledButton = styled(Button)`
   margin: 16px 0 48px 0;
@@ -78,36 +76,14 @@ const AboutMe = () => {
         </Grid>
         <Grid item xs={12}>
           <Grid container spacing={spacing}>
-            <Grid item xs={12} sm={4}>
-              <Text variant="h3" icon={<SportsEsportsIcon />}>
-                Video games
-              </Text>
-              <Text>
-                Been an avid gamer ever since I played games on the SNES.
-                Currently I enjoy the Nintendo Switch and playing Pokemon. I'm
-                looking forward to the next gen games.
-              </Text>
-            </Grid>
-            <Grid item xs={12} sm={4}>
-              <Text variant="h3" icon={<MonetizationOnIcon />}>
-                Finance
-              </Text>
-              <Text>
-                The world of finance is astonishing. When I first learned about
-                compound interest, it blew my mind. I'm heavily interested in
-                personal finance and building wealth.
-              </Text>
-            </Grid>
-            <Grid item xs={12} sm={4}>
-              <Text variant="h3" icon={<FastfoodIcon />}>
-                Food
-              </Text>
-              <Text>
-                I LOVE FOOD! I'm open minded to all types of food and always
-                looking for new places to eat. My favourite is seafood,
-                especially raw oysters. Let me know your food suggestions!
-              </Text>
-            </Grid>
+            {interests.map(interest => (
+              <Grid item xs={12} sm={4} key={interest.key}>
+                <Text variant="h3" icon={interest.icon}>
+                  {interest.name}
+                </Text>
+                <Text>{interest.description}</Text>
+              </Grid>
+            ))}
           </Grid>
         </Grid>
       </Grid>

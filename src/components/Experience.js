@@ -1,35 +1,66 @@
 import React from 'react'
-import { Grid } from '@material-ui/core'
-import Text from './common/Text'
-import PageTitle from './PageTitle'
+import styled from 'styled-components'
+import { Grid, Fade } from '@material-ui/core'
+import LocationOnIcon from '@material-ui/icons/LocationOn'
+import DateRangeIcon from '@material-ui/icons/DateRange'
+
+import Text from 'src/components/common/Text'
+import CustomIcon from 'src/components/common/CustomIcon'
+import { jobs, education } from 'src/constants/experience'
+
+const StyledExperienceGridContainer = styled(Grid)`
+  padding-bottom: 36px;
+`
 
 const Experience = () => (
-  <Box container secondary>
-    <Grid item>
-      <PageTitle title="Skills & Experience" />
+  <Fade in timeout={800}>
+    <Grid container>
+      <Grid item xs={12}>
+        <Text secondary variant="h2">
+          Where I've worked
+        </Text>
+      </Grid>
+      <Grid item xs={12}>
+        {jobs.map(job => (
+          <StyledExperienceGridContainer container key={job.key}>
+            <Grid item xs={12} sm={4}>
+              <Text variant="h3">
+                {job.company} | {job.position}
+              </Text>
+              <Text icon={<DateRangeIcon />}>{job.duration}</Text>
+              <Text icon={<LocationOnIcon />}>{job.location}</Text>
+            </Grid>
+            <Grid item xs={12} sm={8}>
+              <Text>{job.description}</Text>
+              {job.stack.map(item => (
+                <CustomIcon iconName={item} key={item} />
+              ))}
+            </Grid>
+          </StyledExperienceGridContainer>
+        ))}
+      </Grid>
+      <Grid item xs={12}>
+        <Text secondary variant="h2">
+          Where I've studied
+        </Text>
+      </Grid>
+      <Grid item xs={12}>
+        {education.map(edu => (
+          <StyledExperienceGridContainer container key={edu.key}>
+            <Grid item xs={12} sm={4}>
+              <Text variant="h3">{edu.institution}</Text>
+              <Text icon={<DateRangeIcon />}>{edu.duration}</Text>
+              <Text icon={<LocationOnIcon />}>{edu.location}</Text>
+            </Grid>
+            <Grid item xs={12} sm={8}>
+              <Text>{edu.major}</Text>
+              <Text>{edu.degree}</Text>
+            </Grid>
+          </StyledExperienceGridContainer>
+        ))}
+      </Grid>
     </Grid>
-    <Grid item>
-      <Text variant="sectionTitle">Frontend Technologies</Text>
-      <Text>
-        My favourite is React and Vue, along with the powerful Webpack bundler.
-        Currently I've been learning Gatsby, along with Contentful, and
-        TypeScript for its static type-checking.
-      </Text>
-    </Grid>
-    <Grid item>
-      <Text variant="sectionTitle">Backend Technologies</Text>
-      <Text>
-        I’m using the Serverless framework in Python which includes using AWS
-        Lambdas. Moreover, other frameworks I’ve programmed with were
-        CodeIgniter and Laravel for PHP, and Node.js with Express.js. In terms
-        of architectures, I enjoy microservices but also I don't mind the
-        monolith.
-      </Text>
-    </Grid>
-    <Grid item>
-      <Text variant="subtitle">Where I've Worked</Text>
-    </Grid>
-  </Box>
+  </Fade>
 )
 
 export default Experience

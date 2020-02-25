@@ -11,7 +11,7 @@ import {
   PRIMARY_COLOUR,
   SECONDARY_TEXT_COLOUR,
   SECONDARY_FONT
-} from '../constants'
+} from 'src/constants/styles'
 
 const StyledIconButton = styled(props => (
   <IconButton disableRipple target="_blank" {...props} />
