@@ -1,21 +1,31 @@
 {
   "files": {
-    "main.js": "/nikkiquibin/static/js/main.b48168fd.chunk.js",
-    "main.js.map": "/nikkiquibin/static/js/main.b48168fd.chunk.js.map",
+    "main.js": "/nikkiquibin/static/js/main.e18f8661.chunk.js",
+    "main.js.map": "/nikkiquibin/static/js/main.e18f8661.chunk.js.map",
     "runtime-main.js": "/nikkiquibin/static/js/runtime-main.4f499b4b.js",
     "runtime-main.js.map": "/nikkiquibin/static/js/runtime-main.4f499b4b.js.map",
-    "static/js/2.1a6a0b88.chunk.js": "/nikkiquibin/static/js/2.1a6a0b88.chunk.js",
-    "static/js/2.1a6a0b88.chunk.js.map": "/nikkiquibin/static/js/2.1a6a0b88.chunk.js.map",
+    "static/js/2.0d22e9c1.chunk.js": "/nikkiquibin/static/js/2.0d22e9c1.chunk.js",
+    "static/js/2.0d22e9c1.chunk.js.map": "/nikkiquibin/static/js/2.0d22e9c1.chunk.js.map",
     "index.html": "/nikkiquibin/index.html",
-    "precache-manifest.9d2dd121e3bba90ce4dd4368b9605fee.js": "/nikkiquibin/precache-manifest.9d2dd121e3bba90ce4dd4368b9605fee.js",
+    "precache-manifest.ddea3c67ae8f76f9807c5f80bd1cd920.js": "/nikkiquibin/precache-manifest.ddea3c67ae8f76f9807c5f80bd1cd920.js",
     "service-worker.js": "/nikkiquibin/service-worker.js",
-    "static/js/2.1a6a0b88.chunk.js.LICENSE": "/nikkiquibin/static/js/2.1a6a0b88.chunk.js.LICENSE",
+    "static/js/2.0d22e9c1.chunk.js.LICENSE": "/nikkiquibin/static/js/2.0d22e9c1.chunk.js.LICENSE",
+    "static/media/apache.svg": "/nikkiquibin/static/media/apache.93637c19.svg",
+    "static/media/aws-lambda.svg": "/nikkiquibin/static/media/aws-lambda.75de55c8.svg",
+    "static/media/codeigniter.svg": "/nikkiquibin/static/media/codeigniter.24817785.svg",
     "static/media/headshot.jpg": "/nikkiquibin/static/media/headshot.6cdd11b7.jpg",
-    "static/media/nikki_quibin_resume_2020-02-06.pdf": "/nikkiquibin/static/media/nikki_quibin_resume_2020-02-06.d838a7a3.pdf"
+    "static/media/java.svg": "/nikkiquibin/static/media/java.66517ded.svg",
+    "static/media/ms-office.svg": "/nikkiquibin/static/media/ms-office.f3b17fec.svg",
+    "static/media/mysql.svg": "/nikkiquibin/static/media/mysql.c326c80a.svg",
+    "static/media/nikki_quibin_resume_2020-02-06.pdf": "/nikkiquibin/static/media/nikki_quibin_resume_2020-02-06.d838a7a3.pdf",
+    "static/media/postgres.svg": "/nikkiquibin/static/media/postgres.acad8efc.svg",
+    "static/media/python.svg": "/nikkiquibin/static/media/python.3e633281.svg",
+    "static/media/react.svg": "/nikkiquibin/static/media/react.1f6a76a4.svg",
+    "static/media/vue.svg": "/nikkiquibin/static/media/vue.5f30932b.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.4f499b4b.js",
-    "static/js/2.1a6a0b88.chunk.js",
-    "static/js/main.b48168fd.chunk.js"
+    "static/js/2.0d22e9c1.chunk.js",
+    "static/js/main.e18f8661.chunk.js"
   ]
 }
