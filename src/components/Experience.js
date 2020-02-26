@@ -3,6 +3,8 @@ import styled from 'styled-components'
 import { Grid, Fade } from '@material-ui/core'
 import LocationOnIcon from '@material-ui/icons/LocationOn'
 import DateRangeIcon from '@material-ui/icons/DateRange'
+import MenuBookIcon from '@material-ui/icons/MenuBook'
+import EmojiEventsIcon from '@material-ui/icons/EmojiEvents';
 
 import Text from 'src/components/common/Text'
 import CustomIcon from 'src/components/common/CustomIcon'
@@ -47,14 +49,16 @@ const Experience = () => (
       <Grid item xs={12}>
         {education.map(edu => (
           <StyledExperienceGridContainer container key={edu.key}>
-            <Grid item xs={12} sm={4}>
+            <Grid item xs={12}>
               <Text variant="h3">{edu.institution}</Text>
+            </Grid>
+            <Grid item xs={12} sm={4}>
               <Text icon={<DateRangeIcon />}>{edu.duration}</Text>
               <Text icon={<LocationOnIcon />}>{edu.location}</Text>
             </Grid>
             <Grid item xs={12} sm={8}>
-              <Text>{edu.major}</Text>
-              <Text>{edu.degree}</Text>
+              <Text icon={<MenuBookIcon />}>{edu.major}</Text>
+              <Text icon={<EmojiEventsIcon />}>{edu.degree}</Text>
             </Grid>
           </StyledExperienceGridContainer>
         ))}
