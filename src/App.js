@@ -6,7 +6,7 @@ import {
   createMuiTheme,
   ThemeProvider
 } from '@material-ui/core'
-import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom'
+import { BrowserRouter, HashRouter, Switch, Route } from 'react-router-dom'
 
 import Navbar from 'src/components/NavBar'
 import AboutMe from 'src/components/AboutMe'
@@ -38,7 +38,7 @@ const theme = createMuiTheme({
 })
 
 const App = () => (
-  <BrowserRouter>
+  <HashRouter basename="/">
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Container disableGutters maxWidth="md">
@@ -55,9 +55,6 @@ const App = () => (
             <Switch>
               <Route exact path="/" component={AboutMe} />
               <Route path="/experience" component={Experience} />
-              <Route path="*">
-                <Redirect to="/" />
-              </Route>
             </Switch>
           </Box>
           <Box px={4.5} py={2.25}>
@@ -66,7 +63,7 @@ const App = () => (
         </Box>
       </Container>
     </ThemeProvider>
-  </BrowserRouter>
+  </HashRouter>
 )
 
 export default App

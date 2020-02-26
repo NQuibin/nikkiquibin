@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { Grid, Box, Button, Slide } from '@material-ui/core'
 import { Link, useLocation } from 'react-router-dom'
 
-import Text from './common/Text'
+import Text from 'src/components/common/Text'
 import { SECONDARY_TEXT_COLOUR } from 'src/constants/styles'
 
 const StyledHeader = styled(Text)`

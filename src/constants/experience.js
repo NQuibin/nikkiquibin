@@ -9,7 +9,7 @@ export const jobs = [
     location: 'Toronto, ON / Santa Monica, CA',
     description: `
       A SaaS company providing an end-to-end Healthcare Practice growth 
-      platform. Currently developing services to onboard providers quickly 
+      platform. Currently developing microservices to onboard providers quickly 
       and seamlessly.
     `,
     stack: ['vue', 'python', 'postgres', 'awsLambda']
@@ -22,7 +22,7 @@ export const jobs = [
     location: 'Toronto, ON',
     description: `
       Software to streamline the way organizations respond to RFPs, DDQs,
-      and Security Questionnaires. I helped develop third party integrations,
+      and Security Questionnaires. Helped develop third party integrations,
       such as Slack, Salesforce, etc, reports, and dashboards.
     `,
     stack: ['react', 'codeIgniter', 'mySQL', 'apache']
@@ -35,7 +35,7 @@ export const jobs = [
     location: 'Toronto, ON',
     description: `
       The agency that administers tax laws for the Government of Canada. My
-      role was to develop tools and macros to aid auditors with their cases. 
+      role was to develop tools and macros to aid auditors with their cases.
     `,
     stack: ['visualBasic', 'msOffice', 'python']
   },

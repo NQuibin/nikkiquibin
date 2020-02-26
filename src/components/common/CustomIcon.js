@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { Tooltip } from '@material-ui/core'
 
-import { getIcon } from 'src/constants/experienceIcons'
+import { getIcon } from 'src/constants/icons'
 
 const StyledImg = styled.img`
   width: 28px;
@@ -13,6 +13,7 @@ const StyledImg = styled.img`
 
 const CustomIcon = ({ iconName }) => {
   const icon = getIcon(iconName)
+
   return (
     <Tooltip title={icon.name} enterTouchDelay={0} aria-label={icon.name}>
       <StyledImg src={icon.src} alt={icon.name} />
