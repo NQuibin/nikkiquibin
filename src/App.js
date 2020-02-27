@@ -6,7 +6,7 @@ import {
   createMuiTheme,
   ThemeProvider
 } from '@material-ui/core'
-import { BrowserRouter, HashRouter, Switch, Route } from 'react-router-dom'
+import { HashRouter, Switch, Route } from 'react-router-dom'
 
 import Navbar from 'src/components/NavBar'
 import AboutMe from 'src/components/AboutMe'
