@@ -5,7 +5,7 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn'
 import InstagramIcon from '@material-ui/icons/Instagram'
 import GitHubIcon from '@material-ui/icons/GitHub'
 
-import Text from './common/Text'
+import Text from 'src/components/common/Text'
 import {
   TEXT_COLOUR,
   PRIMARY_COLOUR,

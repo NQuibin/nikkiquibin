@@ -1,17 +1,47 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
-import { Grid, Box, Button, Slide } from '@material-ui/core'
+import {
+  Grid,
+  Box,
+  Button,
+  Slide,
+  IconButton,
+  Menu,
+  MenuItem,
+  useMediaQuery
+} from '@material-ui/core'
+import { useTheme } from '@material-ui/core/styles'
+import MenuIcon from '@material-ui/icons/Menu'
 import { Link, useLocation } from 'react-router-dom'
 
 import Text from 'src/components/common/Text'
-import { SECONDARY_TEXT_COLOUR } from 'src/constants/styles'
+import { TEXT_COLOUR, SECONDARY_TEXT_COLOUR } from 'src/constants/styles'
 
 const StyledHeader = styled(Text)`
   font-weight: bold;
   text-transform: uppercase;
 `
 
-const StyledButton = styled(({ active, ...props }) => <Button {...props} />)`
+const StyledMenuButton = styled(IconButton)`
+  padding-right: 0;
+  color: ${TEXT_COLOUR};
+
+  &:hover {
+    background-color: transparent;
+  }
+`
+
+const StyledMenuItem = styled(MenuItem)`
+  && {
+    font-weight: bold;
+    background-color: ${props =>
+      props.selected ? 'rgba(19,100,148, 0.1)' : 'transparent'};
+  }
+`
+
+const StyledButton = styled(({ active, ...props }) => (
+  <Button disableRipple {...props} />
+))`
   margin-left: 4px;
   border-radius: 0;
   border-bottom: 2px solid
@@ -25,8 +55,33 @@ const StyledButton = styled(({ active, ...props }) => <Button {...props} />)`
 `
 
 const NavBar = () => {
+  const [anchorEl, setAnchorEl] = useState(null)
+  const [showMenu, setShowMenu] = useState(false)
+
   const location = useLocation()
+  const theme = useTheme()
+  const showMobileNav = useMediaQuery(theme.breakpoints.down('xs'))
+
+  const aboutMeLinkProps = {
+    component: Link,
+    to: '/'
+  }
+  const experienceLinkProps = {
+    component: Link,
+    to: '/experience'
+  }
+
   const isLocationActive = path => path === location.pathname
+
+  const handleMenuClick = event => {
+    setAnchorEl(event.currentTarget)
+    setShowMenu(true)
+  }
+
+  const handleMenuClose = () => {
+    setAnchorEl(null)
+    setShowMenu(false)
+  }
 
   return (
     <Slide in direction="down" timeout={400}>
@@ -37,22 +92,58 @@ const NavBar = () => {
           </StyledHeader>
         </Grid>
         <Box ml="auto">
-          <StyledButton
-            disableRipple
-            component={Link}
-            to="/"
-            active={isLocationActive('/')}
-          >
-            About me
-          </StyledButton>
-          <StyledButton
-            disableRipple
-            active={isLocationActive('/experience')}
-            component={Link}
-            to="/experience"
-          >
-            Experience
-          </StyledButton>
+          {showMobileNav ? (
+            <>
+              <StyledMenuButton disableRipple onClick={handleMenuClick}>
+                <MenuIcon />
+              </StyledMenuButton>
+              <Menu
+                keepMounted
+                anchorEl={anchorEl}
+                getContentAnchorEl={null}
+                anchorOrigin={{
+                  vertical: 'bottom',
+                  horizontal: 'right'
+                }}
+                transformOrigin={{
+                  vertical: 'top',
+                  horizontal: 'right'
+                }}
+                open={showMenu}
+                onClose={handleMenuClose}
+              >
+                <StyledMenuItem
+                  {...aboutMeLinkProps}
+                  selected={isLocationActive(aboutMeLinkProps.to)}
+                  onClick={handleMenuClose}
+                >
+                  About Me
+                </StyledMenuItem>
+                <StyledMenuItem
+                  {...experienceLinkProps}
+                  selected={isLocationActive(experienceLinkProps.to)}
+                  onClick={handleMenuClose}
+                >
+                  Experience
+                </StyledMenuItem>
+              </Menu>
+            </>
+          ) : (
+            <>
+              <StyledButton
+                {...aboutMeLinkProps}
+                active={isLocationActive(aboutMeLinkProps.to)}
+              >
+                About me
+              </StyledButton>
+              <StyledButton
+                {...experienceLinkProps}
+                active={isLocationActive(experienceLinkProps.to)}
+              >
+                Experience
+              </StyledButton>
+            </>
+          )}
         </Box>
       </Grid>
     </Slide>
