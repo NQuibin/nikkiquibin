@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.js": "/nikkiquibin/static/js/main.9f525eb1.chunk.js",
-    "main.js.map": "/nikkiquibin/static/js/main.9f525eb1.chunk.js.map",
+    "main.js": "/nikkiquibin/static/js/main.997a03c6.chunk.js",
+    "main.js.map": "/nikkiquibin/static/js/main.997a03c6.chunk.js.map",
     "runtime-main.js": "/nikkiquibin/static/js/runtime-main.4f499b4b.js",
     "runtime-main.js.map": "/nikkiquibin/static/js/runtime-main.4f499b4b.js.map",
-    "static/js/2.be462c3e.chunk.js": "/nikkiquibin/static/js/2.be462c3e.chunk.js",
-    "static/js/2.be462c3e.chunk.js.map": "/nikkiquibin/static/js/2.be462c3e.chunk.js.map",
+    "static/js/2.fb4a8782.chunk.js": "/nikkiquibin/static/js/2.fb4a8782.chunk.js",
+    "static/js/2.fb4a8782.chunk.js.map": "/nikkiquibin/static/js/2.fb4a8782.chunk.js.map",
     "index.html": "/nikkiquibin/index.html",
-    "precache-manifest.71d76d678ef8850db6fd49939cfe6ef2.js": "/nikkiquibin/precache-manifest.71d76d678ef8850db6fd49939cfe6ef2.js",
+    "precache-manifest.e3f631b8b7e729e04e0508a6fa842c97.js": "/nikkiquibin/precache-manifest.e3f631b8b7e729e04e0508a6fa842c97.js",
     "service-worker.js": "/nikkiquibin/service-worker.js",
-    "static/js/2.be462c3e.chunk.js.LICENSE": "/nikkiquibin/static/js/2.be462c3e.chunk.js.LICENSE",
+    "static/js/2.fb4a8782.chunk.js.LICENSE": "/nikkiquibin/static/js/2.fb4a8782.chunk.js.LICENSE",
     "static/media/apache.svg": "/nikkiquibin/static/media/apache.93637c19.svg",
     "static/media/aws-lambda.svg": "/nikkiquibin/static/media/aws-lambda.75de55c8.svg",
     "static/media/codeigniter.svg": "/nikkiquibin/static/media/codeigniter.24817785.svg",
@@ -25,7 +25,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.4f499b4b.js",
-    "static/js/2.be462c3e.chunk.js",
-    "static/js/main.9f525eb1.chunk.js"
+    "static/js/2.fb4a8782.chunk.js",
+    "static/js/main.997a03c6.chunk.js"
   ]
 }
