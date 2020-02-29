@@ -1,5 +1,3 @@
-/* eslint-disable import/prefer-default-export */
-
 import React from 'react'
 import SportsEsportsIcon from '@material-ui/icons/SportsEsports'
 import MonetizationOnIcon from '@material-ui/icons/MonetizationOn'

@@ -1,9 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Box, IconButton, Divider, Grow } from '@material-ui/core'
-import LinkedInIcon from '@material-ui/icons/LinkedIn'
-import InstagramIcon from '@material-ui/icons/Instagram'
-import GitHubIcon from '@material-ui/icons/GitHub'
 
 import Text from 'src/components/common/Text'
 import {
@@ -12,6 +9,7 @@ import {
   SECONDARY_TEXT_COLOUR,
   SECONDARY_FONT
 } from 'src/constants/styles'
+import { socialLinks } from 'src/constants/socialLinks'
 
 const StyledIconButton = styled(props => (
   <IconButton disableRipple target="_blank" {...props} />
@@ -41,22 +39,15 @@ const Footer = () => (
     <Box textAlign="center">
       <Divider />
       <Box m={2}>
-        <StyledIconButton
-          disableRipple
-          href="https://www.linkedin.com/in/nikki-louis-quibin-539ba796/"
-          aria-label="linked in"
-        >
-          <LinkedInIcon />
-        </StyledIconButton>
-        <StyledIconButton
-          href="https://www.instagram.com/nik._q/?hl=en"
-          aria-label="instagram"
-        >
-          <InstagramIcon />
-        </StyledIconButton>
-        <StyledIconButton href="https://github.com/NQuibin" aria-label="github">
-          <GitHubIcon />
-        </StyledIconButton>
+        {socialLinks.map(socialLink => (
+          <StyledIconButton
+            key={socialLink.key}
+            href={socialLink.href}
+            aria-label={socialLink.label}
+          >
+            {socialLink.icon}
+          </StyledIconButton>
+        ))}
       </Box>
       <StyledText mb={1}>
         Contact me at{' '}

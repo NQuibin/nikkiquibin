@@ -1,5 +1,3 @@
-/* eslint-disable import/prefer-default-export */
-
 export const TEXT_COLOUR = '#22223B'
 export const SECONDARY_TEXT_COLOUR = '#136494'
 

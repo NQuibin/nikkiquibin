@@ -1,5 +1,3 @@
-/* eslint-disable import/prefer-default-export */
-
 import vueSVG from 'src/assets/vue.svg'
 import pythonSVG from 'src/assets/python.svg'
 import postgresSVG from 'src/assets/postgres.svg'
