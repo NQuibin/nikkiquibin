@@ -4,6 +4,9 @@ module.exports = {
   webpack: {
     alias: {
       src: path.resolve(__dirname, 'src/')
+    },
+    configure: {
+      devtool: 'hidden-source-map'
     }
   },
   jest: {
