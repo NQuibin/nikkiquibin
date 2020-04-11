@@ -3,7 +3,14 @@ import SportsEsportsIcon from '@material-ui/icons/SportsEsports'
 import MonetizationOnIcon from '@material-ui/icons/MonetizationOn'
 import FastfoodIcon from '@material-ui/icons/Fastfood'
 
-export const interests = [
+interface Interest {
+  key: string,
+  name: string,
+  description: string,
+  icon: React.ReactNode
+}
+
+export const interests: Interest[] = [
   {
     key: 'videoGames',
     name: 'Video Games',

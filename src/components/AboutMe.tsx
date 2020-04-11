@@ -10,7 +10,7 @@ import { SECONDARY_TEXT_COLOUR, SECONDARY_FONT } from 'src/constants/styles'
 import headshot from 'src/assets/headshot.jpg'
 import resume from 'src/assets/nikki_quibin_resume_2020-02-06.pdf'
 
-const StyledButton = styled(Button)`
+const StyledButton = styled(props => <Button target="_blank" {...props} />)`
   margin: 16px 0 48px 0;
   font-family: ${SECONDARY_FONT};
   color: ${SECONDARY_TEXT_COLOUR};
@@ -37,7 +37,6 @@ const AboutMe = () => {
             <StyledImg src={headshot} alt="Nikki Quibin's headshot" />
             <StyledButton
               disableRipple
-              target="_blank"
               href={resume}
               startIcon={<PersonIcon />}
             >

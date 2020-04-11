@@ -1,7 +1,6 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React, { FC } from 'react'
 import styled from 'styled-components'
-import { Tooltip } from '@material-ui/core'
+import Tooltip from '@material-ui/core/Tooltip'
 
 import { getIcon } from 'src/constants/icons'
 
@@ -11,7 +10,11 @@ const StyledImg = styled.img`
   margin-right: 12px;
 `
 
-const CustomIcon = ({ iconName }) => {
+interface Props {
+  iconName: string
+}
+
+const CustomIcon: FC<Props> = ({ iconName }) => {
   const icon = getIcon(iconName)
 
   return (
@@ -20,7 +23,5 @@ const CustomIcon = ({ iconName }) => {
     </Tooltip>
   )
 }
-
-CustomIcon.propTypes = { iconName: PropTypes.string.isRequired }
 
 export default CustomIcon

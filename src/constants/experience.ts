@@ -1,4 +1,17 @@
-export const jobs = [
+interface Experience {
+  key: string
+  duration: string
+  location: string
+}
+
+interface Job extends Experience {
+  company: string
+  position: string
+  description: string
+  stack: Array<string>
+}
+
+export const jobs: Job[] = [
   {
     key: 'patientpop',
     company: 'PatientPop',
@@ -52,7 +65,13 @@ export const jobs = [
   }
 ]
 
-export const education = [
+interface Education extends Experience {
+  institution: string
+  major: string
+  degree: string
+}
+
+export const education: Education[] = [
   {
     key: 'uoft',
     institution: 'University of Toronto',

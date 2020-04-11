@@ -3,7 +3,14 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn'
 import InstagramIcon from '@material-ui/icons/Instagram'
 import GitHubIcon from '@material-ui/icons/GitHub'
 
-export const socialLinks = [
+interface SocialLink {
+  key: string,
+  label: string,
+  href: string
+  icon: React.ReactNode
+}
+
+export const socialLinks: SocialLink[] = [
   {
     key: 'linkedin',
     label: 'Linked In',

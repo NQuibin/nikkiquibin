@@ -10,6 +10,11 @@ import visualBasicPNG from 'src/assets/visual-basic.png'
 import msOfficeSVG from 'src/assets/ms-office.svg'
 import javaSVG from 'src/assets/java.svg'
 
+interface Icon {
+  name: string,
+  src: string
+}
+
 export const vueIcon = { name: 'Vue', src: vueSVG }
 export const pythonIcon = { name: 'Python', src: pythonSVG }
 export const postgresIcon = { name: 'PostgreSQL', src: postgresSVG }
@@ -22,7 +27,7 @@ export const visualBasicIcon = { name: 'Visual Basic', src: visualBasicPNG }
 export const msOfficeIcon = { name: 'MS Office', src: msOfficeSVG }
 export const javaIcon = { name: 'Java', src: javaSVG }
 
-const iconMapping = {
+const iconMapping: { [key: string]: Icon } = {
   vue: vueIcon,
   python: pythonIcon,
   postgres: postgresIcon,
@@ -36,4 +41,4 @@ const iconMapping = {
   java: javaIcon
 }
 
-export const getIcon = name => iconMapping[name]
+export const getIcon = (name: string) => iconMapping[name]

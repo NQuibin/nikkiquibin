@@ -1,7 +1,6 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React, { FC } from 'react'
 import styled from 'styled-components'
-import { Box } from '@material-ui/core'
+import Box, { BoxProps } from '@material-ui/core/Box'
 import {
   TEXT_COLOUR,
   SECONDARY_TEXT_COLOUR,
@@ -10,7 +9,13 @@ import {
   DEFAULT_FONT_SIZE
 } from 'src/constants/styles'
 
-const VARIANTS = {
+interface Variant {
+  component: string,
+  fontSize: string
+  fontFamily?: string
+}
+
+const VARIANTS: { [index: string]: Variant } = {
   h1: {
     component: 'h1',
     fontSize: '24px'
@@ -31,9 +36,9 @@ const VARIANTS = {
   }
 }
 
-const StyledBox = styled(({ secondary, fontFamily, icon, ...props }) => (
-  <Box {...props} />
-))`
+const StyledBox = styled(
+  ({ secondary, fontSize, fontFamily, icon, ...props }) => <Box {...props} />
+)`
   line-height: 1.75;
   font-size: ${props => props.fontSize || DEFAULT_FONT_SIZE};
   font-family: ${props => props.fontFamily || PRIMARY_FONT};
@@ -51,7 +56,22 @@ const StyledBox = styled(({ secondary, fontFamily, icon, ...props }) => (
   `}
 `
 
-const Text = ({ children, variant, icon, secondary, className, ...props }) => {
+interface Props extends BoxProps {
+  children: React.ReactNode
+  variant?: 'h1' | 'h2' | 'h3' | 'body'
+  icon?: React.ReactNode
+  secondary?: boolean
+  className?: string
+}
+
+const Text: FC<Props> = ({
+  children,
+  variant = 'body',
+  icon = null,
+  secondary = false,
+  className = '',
+  ...props
+}) => {
   const variantStyles = VARIANTS[variant || 'body']
   return (
     <StyledBox
@@ -67,21 +87,6 @@ const Text = ({ children, variant, icon, secondary, className, ...props }) => {
       {children}
     </StyledBox>
   )
-}
-
-Text.propTypes = {
-  children: PropTypes.node.isRequired,
-  variant: PropTypes.oneOf(['h1', 'h2', 'h3', 'body']),
-  icon: PropTypes.node,
-  secondary: PropTypes.bool,
-  className: PropTypes.string
-}
-
-Text.defaultProps = {
-  variant: 'body',
-  icon: null,
-  secondary: false,
-  className: ''
 }
 
 export default Text

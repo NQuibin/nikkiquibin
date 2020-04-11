@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, SyntheticEvent } from 'react'
 import styled from 'styled-components'
 import {
   Grid,
@@ -55,7 +55,7 @@ const StyledButton = styled(({ active, ...props }) => (
 `
 
 const NavBar = () => {
-  const [anchorEl, setAnchorEl] = useState(null)
+  const [anchorEl, setAnchorEl] = useState<null | Element>(null)
   const [showMenu, setShowMenu] = useState(false)
 
   const location = useLocation()
@@ -71,9 +71,9 @@ const NavBar = () => {
     to: '/experience'
   }
 
-  const isLocationActive = path => path === location.pathname
+  const isLocationActive = (path: string) => path === location.pathname
 
-  const handleMenuClick = event => {
+  const handleMenuClick = (event: SyntheticEvent): void => {
     setAnchorEl(event.currentTarget)
     setShowMenu(true)
   }
