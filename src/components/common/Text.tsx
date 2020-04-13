@@ -36,9 +36,16 @@ const VARIANTS: { [index: string]: Variant } = {
   }
 }
 
+interface StyledBoxProps {
+  secondary?: boolean,
+  fontSize?: boolean,
+  fontFamily?: boolean,
+  icon?: React.ReactNode
+}
+
 const StyledBox = styled(
   ({ secondary, fontSize, fontFamily, icon, ...props }) => <Box {...props} />
-)`
+)<StyledBoxProps>`
   line-height: 1.75;
   font-size: ${props => props.fontSize || DEFAULT_FONT_SIZE};
   font-family: ${props => props.fontFamily || PRIMARY_FONT};
@@ -56,7 +63,7 @@ const StyledBox = styled(
   `}
 `
 
-interface Props extends BoxProps {
+interface TextProps extends BoxProps {
   children: React.ReactNode
   variant?: 'h1' | 'h2' | 'h3' | 'body'
   icon?: React.ReactNode
@@ -64,7 +71,7 @@ interface Props extends BoxProps {
   className?: string
 }
 
-const Text: FC<Props> = ({
+const Text: FC<TextProps> = ({
   children,
   variant = 'body',
   icon = null,
