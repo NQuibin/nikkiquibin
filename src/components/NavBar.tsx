@@ -63,7 +63,7 @@ const StyledButton = styled(({ active, ...props }) => (
 
 const NavBar = () => {
   const [anchorEl, setAnchorEl] = useState<null | Element>(null)
-  const [showMenu, setShowMenu] = useState(false)
+  const [showMenu, setShowMenu] = useState<boolean>(false)
 
   const location = useLocation()
   const theme = useTheme()
