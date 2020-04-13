@@ -31,11 +31,7 @@ const StyledMenuButton = styled(IconButton)`
   }
 `
 
-interface StyledMenuItemProps {
-  selected: boolean
-}
-
-const StyledMenuItem = styled(MenuItem)<StyledMenuItemProps>`
+const StyledMenuItem = styled(MenuItem)`
   && {
     font-weight: bold;
     background-color: ${props =>
@@ -43,13 +39,9 @@ const StyledMenuItem = styled(MenuItem)<StyledMenuItemProps>`
   }
 `
 
-interface StyledButtonProps {
-  active: boolean
-}
-
 const StyledButton = styled(({ active, ...props }) => (
   <Button disableRipple {...props} />
-))<StyledButtonProps>`
+))`
   margin-left: 4px;
   border-radius: 0;
   border-bottom: 2px solid

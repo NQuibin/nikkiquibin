@@ -10,11 +10,11 @@ const StyledImg = styled.img`
   margin-right: 12px;
 `
 
-interface Props {
+interface CustomIconProps {
   iconName: string
 }
 
-const CustomIcon: FC<Props> = ({ iconName }) => {
+const CustomIcon: FC<CustomIconProps> = ({ iconName }) => {
   const icon = getIcon(iconName)
 
   return (
