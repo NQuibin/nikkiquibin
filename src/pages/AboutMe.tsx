@@ -4,7 +4,7 @@ import { Grid, Box, Button, Fade, useMediaQuery } from '@material-ui/core'
 import { useTheme } from '@material-ui/core/styles'
 import PersonIcon from '@material-ui/icons/Person'
 
-import Text from 'src/components/common/Text'
+import Text from 'src/components/ui/Text'
 import { interests } from 'src/constants/interests'
 import { SECONDARY_TEXT_COLOUR, SECONDARY_FONT } from 'src/constants/styles'
 import headshot from 'src/assets/headshot.jpg'

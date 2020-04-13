@@ -6,8 +6,8 @@ import DateRangeIcon from '@material-ui/icons/DateRange'
 import MenuBookIcon from '@material-ui/icons/MenuBook'
 import EmojiEventsIcon from '@material-ui/icons/EmojiEvents';
 
-import Text from 'src/components/common/Text'
-import CustomIcon from 'src/components/common/CustomIcon'
+import Text from 'src/components/ui/Text'
+import CustomIcon from 'src/components/ui/CustomIcon'
 import { jobs, education } from 'src/constants/experience'
 
 const StyledExperienceGridContainer = styled(Grid)`

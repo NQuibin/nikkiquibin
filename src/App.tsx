@@ -1,17 +1,10 @@
 import React from 'react'
-import {
-  Container,
-  Box,
-  CssBaseline,
-  createMuiTheme,
-  ThemeProvider
-} from '@material-ui/core'
+import { CssBaseline, createMuiTheme, ThemeProvider } from '@material-ui/core'
 import { HashRouter, Switch, Route } from 'react-router-dom'
 
-import Navbar from 'src/components/NavBar'
-import AboutMe from 'src/components/AboutMe'
-import Experience from 'src/components/Experience'
-import Footer from 'src/components/Footer'
+import PageContainer from 'src/components/layout/PageContainer'
+import AboutMe from 'src/pages/AboutMe'
+import Experience from 'src/pages/Experience'
 import { PRIMARY_COLOUR } from 'src/constants/styles'
 
 const theme = createMuiTheme({
@@ -41,27 +34,12 @@ const App = () => (
   <HashRouter basename="/">
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Container disableGutters maxWidth="md">
-        <Box
-          display="flex"
-          flexDirection="column"
-          justifyContent="center"
-          minHeight="100vh"
-        >
-          <Box px={4.5} py={2.25}>
-            <Navbar />
-          </Box>
-          <Box px={4.5} py={2.25}>
-            <Switch>
-              <Route exact path="/" component={AboutMe} />
-              <Route path="/experience" component={Experience} />
-            </Switch>
-          </Box>
-          <Box px={4.5} py={2.25}>
-            <Footer />
-          </Box>
-        </Box>
-      </Container>
+      <PageContainer>
+        <Switch>
+          <Route exact path="/" component={AboutMe} />
+          <Route path="/experience" component={Experience} />
+        </Switch>
+      </PageContainer>
     </ThemeProvider>
   </HashRouter>
 )

@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { Box, IconButton, Divider, Grow } from '@material-ui/core'
 
-import Text from 'src/components/common/Text'
+import Text from 'src/components/ui/Text'
 import {
   TEXT_COLOUR,
   PRIMARY_COLOUR,

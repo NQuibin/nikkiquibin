@@ -1,51 +1,18 @@
 import React, { FC } from 'react'
 import styled from 'styled-components'
 import Box, { BoxProps } from '@material-ui/core/Box'
+
 import {
   TEXT_COLOUR,
   SECONDARY_TEXT_COLOUR,
   PRIMARY_FONT,
-  SECONDARY_FONT,
   DEFAULT_FONT_SIZE
 } from 'src/constants/styles'
-
-interface Variant {
-  component: string,
-  fontSize: string
-  fontFamily?: string
-}
-
-const VARIANTS: { [index: string]: Variant } = {
-  h1: {
-    component: 'h1',
-    fontSize: '24px'
-  },
-  h2: {
-    component: 'h2',
-    fontSize: '20px',
-    fontFamily: SECONDARY_FONT
-  },
-  h3: {
-    component: 'h3',
-    fontSize: '16px',
-    fontFamily: SECONDARY_FONT
-  },
-  body: {
-    component: 'p',
-    fontSize: '14px'
-  }
-}
-
-interface StyledBoxProps {
-  secondary?: boolean,
-  fontSize?: boolean,
-  fontFamily?: boolean,
-  icon?: React.ReactNode
-}
+import { variants } from 'src/components/ui/Text/variants'
 
 const StyledBox = styled(
   ({ secondary, fontSize, fontFamily, icon, ...props }) => <Box {...props} />
-)<StyledBoxProps>`
+)`
   line-height: 1.75;
   font-size: ${props => props.fontSize || DEFAULT_FONT_SIZE};
   font-family: ${props => props.fontFamily || PRIMARY_FONT};
@@ -71,7 +38,7 @@ interface TextProps extends BoxProps {
   className?: string
 }
 
-const Text: FC<TextProps> = ({
+const Index: FC<TextProps> = ({
   children,
   variant = 'body',
   icon = null,
@@ -79,7 +46,7 @@ const Text: FC<TextProps> = ({
   className = '',
   ...props
 }) => {
-  const variantStyles = VARIANTS[variant || 'body']
+  const variantStyles = variants[variant || 'body']
   return (
     <StyledBox
       mt={0}
@@ -96,4 +63,4 @@ const Text: FC<TextProps> = ({
   )
 }
 
-export default Text
+export default Index

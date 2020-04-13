@@ -14,7 +14,7 @@ import { useTheme } from '@material-ui/core/styles'
 import MenuIcon from '@material-ui/icons/Menu'
 import { Link, useLocation } from 'react-router-dom'
 
-import Text from 'src/components/common/Text'
+import Text from 'src/components/ui/Text'
 import {
   TEXT_COLOUR,
   SECONDARY_TEXT_COLOUR,
