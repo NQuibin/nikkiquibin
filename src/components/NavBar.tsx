@@ -15,9 +15,14 @@ import MenuIcon from '@material-ui/icons/Menu'
 import { Link, useLocation } from 'react-router-dom'
 
 import Text from 'src/components/common/Text'
-import { TEXT_COLOUR, SECONDARY_TEXT_COLOUR } from 'src/constants/styles'
+import {
+  TEXT_COLOUR,
+  SECONDARY_TEXT_COLOUR,
+  SECONDARY_FONT
+} from 'src/constants/styles'
 
 const StyledHeader = styled(Text)`
+  font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
 `
@@ -33,6 +38,7 @@ const StyledMenuButton = styled(IconButton)`
 
 const StyledMenuItem = styled(MenuItem)`
   && {
+    font-family: ${SECONDARY_FONT};
     font-weight: bold;
     background-color: ${props =>
       props.selected ? 'rgba(19,100,148, 0.1)' : 'transparent'};
@@ -47,6 +53,7 @@ const StyledButton = styled(({ active, ...props }) => (
   border-bottom: 2px solid
     ${props => (props.active ? SECONDARY_TEXT_COLOUR : 'transparent')};
   text-transform: capitalize;
+  font-family: ${SECONDARY_FONT};
   font-weight: bold;
 
   &:hover {
@@ -87,7 +94,12 @@ const NavBar = () => {
     <Slide in direction="down" timeout={400}>
       <Grid container alignItems="center">
         <Grid item>
-          <StyledHeader textAlign="center" letterSpacing={5} mb={0}>
+          <StyledHeader
+            variant="h1"
+            textAlign="center"
+            letterSpacing={5}
+            mb={0}
+          >
             Nikki Louis Quibin
           </StyledHeader>
         </Grid>
