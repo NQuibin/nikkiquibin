@@ -18,12 +18,16 @@ import Text from 'src/components/ui/Text'
 import {
   TEXT_COLOUR,
   SECONDARY_TEXT_COLOUR,
-  SECONDARY_FONT
+  SECONDARY_FONT,
+  DEFAULT_FONT_SIZE
 } from 'src/constants/styles'
 
+import resume from 'src/assets/nikki_quibin_resume_2020-02-06.pdf'
+
 const StyledHeader = styled(Text)`
-  font-size: 14px;
+  font-size: ${DEFAULT_FONT_SIZE};
   font-weight: bold;
+  font-family: ${SECONDARY_FONT};
   text-transform: uppercase;
 `
 
@@ -77,17 +81,26 @@ const NavBar = () => {
     component: Link,
     to: '/experience'
   }
+  const resumeLinkProps = {
+    href: resume,
+    target: '_blank'
+  }
 
-  const isLocationActive = (path: string) => path === location.pathname
+  const isLocationActive = (path: string): boolean => path === location.pathname
 
   const handleMenuClick = (event: SyntheticEvent): void => {
     setAnchorEl(event.currentTarget)
     setShowMenu(true)
   }
 
-  const handleMenuClose = () => {
+  const handleMenuClose = (): void => {
     setAnchorEl(null)
     setShowMenu(false)
+  }
+
+  const handleResumeMenuItemClick = (): void => {
+    handleMenuClose()
+    window.open(resumeLinkProps.href, '_blank')
   }
 
   return (
@@ -138,6 +151,9 @@ const NavBar = () => {
                 >
                   Experience
                 </StyledMenuItem>
+                <StyledMenuItem onClick={handleResumeMenuItemClick}>
+                  Resume
+                </StyledMenuItem>
               </Menu>
             </>
           ) : (
@@ -154,6 +170,7 @@ const NavBar = () => {
               >
                 Experience
               </StyledButton>
+              <StyledButton {...resumeLinkProps}>Resume</StyledButton>
             </>
           )}
         </Box>

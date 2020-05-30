@@ -35,7 +35,7 @@ export const interests: Interest[] = [
     key: 'food',
     name: 'Food',
     description: `
-      I LOVE FOOD! I'm open minded to all types of food and always
+      I love food! I'm open minded to all types of food and always
       looking for new places to eat. My favourite is seafood,
       especially raw oysters. Let me know your food suggestions!
     `,

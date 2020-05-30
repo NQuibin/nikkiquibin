@@ -9,7 +9,7 @@ interface Variant {
 export const variants: { [index: string]: Variant } = {
   h1: {
     component: 'h1',
-    fontSize: '24px'
+    fontSize: '22px'
   },
   h2: {
     component: 'h2',
@@ -18,11 +18,11 @@ export const variants: { [index: string]: Variant } = {
   },
   h3: {
     component: 'h3',
-    fontSize: '16px',
+    fontSize: '18px',
     fontFamily: SECONDARY_FONT
   },
   body: {
     component: 'p',
-    fontSize: '14px'
+    fontSize: '16px'
   }
 }

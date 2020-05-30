@@ -25,10 +25,6 @@ const StyledIconButton = styled(props => (
   }
 `
 
-const StyledText = styled(Text)`
-  font-family: ${SECONDARY_FONT};
-`
-
 const StyledAnchor = styled.a`
   text-decoration: none;
   color: ${SECONDARY_TEXT_COLOUR};
@@ -49,17 +45,17 @@ const Footer = () => (
           </StyledIconButton>
         ))}
       </Box>
-      <StyledText mb={1}>
+      <Text mb={1}>
         Contact me at{' '}
         <StyledAnchor href="mailto:nikki.quibin@gmail.com">
           nikki.quibin@gmail.com
         </StyledAnchor>
         .
-      </StyledText>
-      <StyledText mb={1}>Created with React and Material UI.</StyledText>
-      <StyledText mb={0}>
+      </Text>
+      <Text mb={1}>Created with React and Material UI.</Text>
+      <Text mb={0}>
         © Copyright <strong>{new Date().getFullYear()}</strong>.
-      </StyledText>
+      </Text>
     </Box>
   </Grow>
 )

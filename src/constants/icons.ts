@@ -11,21 +11,27 @@ import msOfficeSVG from 'src/assets/ms-office.svg'
 import javaSVG from 'src/assets/java.svg'
 
 interface Icon {
-  name: string,
+  name: string
   src: string
 }
 
-export const vueIcon = { name: 'Vue', src: vueSVG }
-export const pythonIcon = { name: 'Python', src: pythonSVG }
-export const postgresIcon = { name: 'PostgreSQL', src: postgresSVG }
-export const awsLambdaIcon = { name: 'AWS Lambda', src: awsLambdaSVG }
-export const reactIcon = { name: 'React', src: reactSVG }
-export const codeIgniterIcon = { name: 'Code Igniter', src: codeIgniterSVG }
-export const mySQLIcon = { name: 'MySQL', src: mySQLSVG }
-export const apacheIcon = { name: 'Apache', src: apacheSVG }
-export const visualBasicIcon = { name: 'Visual Basic', src: visualBasicPNG }
-export const msOfficeIcon = { name: 'MS Office', src: msOfficeSVG }
-export const javaIcon = { name: 'Java', src: javaSVG }
+export const vueIcon: Icon = { name: 'Vue', src: vueSVG }
+export const pythonIcon: Icon = { name: 'Python', src: pythonSVG }
+export const postgresIcon: Icon = { name: 'PostgreSQL', src: postgresSVG }
+export const awsLambdaIcon: Icon = { name: 'AWS Lambda', src: awsLambdaSVG }
+export const reactIcon: Icon = { name: 'React', src: reactSVG }
+export const codeIgniterIcon: Icon = {
+  name: 'Code Igniter',
+  src: codeIgniterSVG
+}
+export const mySQLIcon: Icon = { name: 'MySQL', src: mySQLSVG }
+export const apacheIcon: Icon = { name: 'Apache', src: apacheSVG }
+export const visualBasicIcon: Icon = {
+  name: 'Visual Basic',
+  src: visualBasicPNG
+}
+export const msOfficeIcon: Icon = { name: 'MS Office', src: msOfficeSVG }
+export const javaIcon: Icon = { name: 'Java', src: javaSVG }
 
 const iconMapping: { [key: string]: Icon } = {
   vue: vueIcon,
@@ -41,4 +47,4 @@ const iconMapping: { [key: string]: Icon } = {
   java: javaIcon
 }
 
-export const getIcon = (name: string) => iconMapping[name]
+export const getIcon = (name: string): Icon => iconMapping[name]

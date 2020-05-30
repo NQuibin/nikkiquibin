@@ -15,8 +15,8 @@ const theme = createMuiTheme({
   },
   typography: {
     fontFamily: [
-      "'Merriweather'",
-      '"Raleway"',
+      "'Open Sans'",
+      '"Roboto"',
       'BlinkMacSystemFont',
       '"Segoe UI"',
       'Roboto',

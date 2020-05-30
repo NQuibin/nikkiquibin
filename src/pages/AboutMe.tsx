@@ -1,20 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Grid, Box, Button, Fade, useMediaQuery } from '@material-ui/core'
+import { Grid, Box, Fade, useMediaQuery } from '@material-ui/core'
 import { useTheme } from '@material-ui/core/styles'
-import PersonIcon from '@material-ui/icons/Person'
 
 import Text from 'src/components/ui/Text'
 import { interests } from 'src/constants/interests'
-import { SECONDARY_TEXT_COLOUR, SECONDARY_FONT } from 'src/constants/styles'
 import headshot from 'src/assets/headshot.jpg'
-import resume from 'src/assets/nikki_quibin_resume_2020-02-06.pdf'
-
-const StyledButton = styled(props => <Button target="_blank" {...props} />)`
-  margin: 16px 0 48px 0;
-  font-family: ${SECONDARY_FONT};
-  color: ${SECONDARY_TEXT_COLOUR};
-`
 
 const StyledImg = styled.img`
   display: block;
@@ -33,15 +24,8 @@ const AboutMe = () => {
     <Fade in timeout={800}>
       <Grid container>
         <Grid item xs={12} sm={4}>
-          <Box textAlign="center" pr={spacing}>
+          <Box textAlign="center" pr={spacing} pb={3}>
             <StyledImg src={headshot} alt="Nikki Quibin's headshot" />
-            <StyledButton
-              disableRipple
-              href={resume}
-              startIcon={<PersonIcon />}
-            >
-              Resume
-            </StyledButton>
           </Box>
         </Grid>
         <Grid item xs={12} sm={8}>
@@ -69,7 +53,7 @@ const AboutMe = () => {
           </Box>
         </Grid>
         <Grid item xs={12}>
-          <Text secondary variant="h2">
+          <Text secondary variant="h2" mt={4}>
             Some of my interests
           </Text>
         </Grid>
