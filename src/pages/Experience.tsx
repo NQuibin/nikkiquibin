@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Grid, Fade } from '@material-ui/core'
+import { Grid, Fade, Divider } from '@material-ui/core'
 import LocationOnIcon from '@material-ui/icons/LocationOn'
 import DateRangeIcon from '@material-ui/icons/DateRange'
 import MenuBookIcon from '@material-ui/icons/MenuBook'
@@ -24,19 +24,23 @@ const Experience = () => (
       </Grid>
       <Grid item xs={12}>
         {jobs.map(job => (
-          <StyledExperienceGridContainer container key={job.key}>
-            <Grid item xs={12} sm={4}>
-              <Text variant="h3">
-                {job.company} | {job.position}
-              </Text>
-              <Text icon={<DateRangeIcon />}>{job.duration}</Text>
-              <Text icon={<LocationOnIcon />}>{job.location}</Text>
-            </Grid>
+          <StyledExperienceGridContainer container key={job.key} spacing={2}>
             <Grid item xs={12} sm={8}>
+              <Text variant="h3">{job.company}</Text>
               <Text>{job.description}</Text>
               {job.stack.map(item => (
                 <CustomIcon iconName={item} key={item} />
               ))}
+            </Grid>
+            <Grid item xs={12} sm={4}>
+              <Text variant="h3">
+                {job.position}
+              </Text>
+              <Text icon={<DateRangeIcon />}>{job.duration}</Text>
+              <Text icon={<LocationOnIcon />}>{job.location}</Text>
+            </Grid>
+            <Grid item xs={12}>
+              <Divider />
             </Grid>
           </StyledExperienceGridContainer>
         ))}
