@@ -1,0 +1,1 @@
+(this.webpackJsonpnikkiquibin=this.webpackJsonpnikkiquibin||[]).push([[9],{94:function(i,s,n){i.exports=n.p+"static/media/postgres.acad8efc.svg"}}]);
