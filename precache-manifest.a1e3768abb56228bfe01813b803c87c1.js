@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c6e2b242773c534f22b378361cd1d0b6",
+    "revision": "233acbc815bd22516690801facfaf166",
     "url": "/nikkiquibin/index.html"
   },
   {
@@ -20,12 +20,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/nikkiquibin/static/js/13.714b4427.chunk.js"
   },
   {
-    "revision": "c3f0d9ced6c3119e8a6f",
-    "url": "/nikkiquibin/static/js/2.0d5cc468.chunk.js"
+    "revision": "7a55bc2176380689e7cc",
+    "url": "/nikkiquibin/static/js/2.ef750a64.chunk.js"
   },
   {
     "revision": "0bf38cf6c0b51ec69d7a52e8875a6dbf",
-    "url": "/nikkiquibin/static/js/2.0d5cc468.chunk.js.LICENSE.txt"
+    "url": "/nikkiquibin/static/js/2.ef750a64.chunk.js.LICENSE.txt"
   },
   {
     "revision": "6a55d7d304324afd5ee7",
@@ -56,8 +56,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/nikkiquibin/static/js/9.17231940.chunk.js"
   },
   {
-    "revision": "f7150eb0b8e11d60ce8d",
-    "url": "/nikkiquibin/static/js/main.84ebba0f.chunk.js"
+    "revision": "28eb175621f4e8948d71",
+    "url": "/nikkiquibin/static/js/main.86dac5ef.chunk.js"
   },
   {
     "revision": "3e911827688e8e46a938",
@@ -96,8 +96,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/nikkiquibin/static/media/mysql.c326c80a.svg"
   },
   {
-    "revision": "d838a7a35a00ffb4a23c71b8ced2edee",
-    "url": "/nikkiquibin/static/media/nikki_quibin_resume_2020-02-06.d838a7a3.pdf"
+    "revision": "0361e8f4ccc08491d6efbf1bacf00c4e",
+    "url": "/nikkiquibin/static/media/nikki_quibin_resume_2020-07-13.0361e8f4.pdf"
   },
   {
     "revision": "acad8efc369c4e22586f1d28bea710a1",

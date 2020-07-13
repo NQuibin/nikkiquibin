@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.js": "/nikkiquibin/static/js/main.84ebba0f.chunk.js",
-    "main.js.map": "/nikkiquibin/static/js/main.84ebba0f.chunk.js.map",
+    "main.js": "/nikkiquibin/static/js/main.86dac5ef.chunk.js",
+    "main.js.map": "/nikkiquibin/static/js/main.86dac5ef.chunk.js.map",
     "runtime-main.js": "/nikkiquibin/static/js/runtime-main.b0534742.js",
     "runtime-main.js.map": "/nikkiquibin/static/js/runtime-main.b0534742.js.map",
-    "static/js/2.0d5cc468.chunk.js": "/nikkiquibin/static/js/2.0d5cc468.chunk.js",
-    "static/js/2.0d5cc468.chunk.js.map": "/nikkiquibin/static/js/2.0d5cc468.chunk.js.map",
+    "static/js/2.ef750a64.chunk.js": "/nikkiquibin/static/js/2.ef750a64.chunk.js",
+    "static/js/2.ef750a64.chunk.js.map": "/nikkiquibin/static/js/2.ef750a64.chunk.js.map",
     "static/js/3.44c8064d.chunk.js": "/nikkiquibin/static/js/3.44c8064d.chunk.js",
     "static/js/3.44c8064d.chunk.js.map": "/nikkiquibin/static/js/3.44c8064d.chunk.js.map",
     "static/js/4.678fe9f1.chunk.js": "/nikkiquibin/static/js/4.678fe9f1.chunk.js",
@@ -29,9 +29,9 @@
     "static/js/13.714b4427.chunk.js": "/nikkiquibin/static/js/13.714b4427.chunk.js",
     "static/js/13.714b4427.chunk.js.map": "/nikkiquibin/static/js/13.714b4427.chunk.js.map",
     "index.html": "/nikkiquibin/index.html",
-    "precache-manifest.a83fefe8717215e5fc5d9872ba4ed160.js": "/nikkiquibin/precache-manifest.a83fefe8717215e5fc5d9872ba4ed160.js",
+    "precache-manifest.a1e3768abb56228bfe01813b803c87c1.js": "/nikkiquibin/precache-manifest.a1e3768abb56228bfe01813b803c87c1.js",
     "service-worker.js": "/nikkiquibin/service-worker.js",
-    "static/js/2.0d5cc468.chunk.js.LICENSE.txt": "/nikkiquibin/static/js/2.0d5cc468.chunk.js.LICENSE.txt",
+    "static/js/2.ef750a64.chunk.js.LICENSE.txt": "/nikkiquibin/static/js/2.ef750a64.chunk.js.LICENSE.txt",
     "static/media/apache.svg": "/nikkiquibin/static/media/apache.93637c19.svg",
     "static/media/aws-lambda.svg": "/nikkiquibin/static/media/aws-lambda.75de55c8.svg",
     "static/media/codeigniter.svg": "/nikkiquibin/static/media/codeigniter.24817785.svg",
@@ -40,7 +40,7 @@
     "static/media/java.svg": "/nikkiquibin/static/media/java.66517ded.svg",
     "static/media/ms-office.svg": "/nikkiquibin/static/media/ms-office.f3b17fec.svg",
     "static/media/mysql.svg": "/nikkiquibin/static/media/mysql.c326c80a.svg",
-    "static/media/nikki_quibin_resume_2020-02-06.pdf": "/nikkiquibin/static/media/nikki_quibin_resume_2020-02-06.d838a7a3.pdf",
+    "static/media/nikki_quibin_resume_2020-07-13.pdf": "/nikkiquibin/static/media/nikki_quibin_resume_2020-07-13.0361e8f4.pdf",
     "static/media/postgres.svg": "/nikkiquibin/static/media/postgres.acad8efc.svg",
     "static/media/python.svg": "/nikkiquibin/static/media/python.3e633281.svg",
     "static/media/react.svg": "/nikkiquibin/static/media/react.1f6a76a4.svg",
@@ -48,7 +48,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.b0534742.js",
-    "static/js/2.0d5cc468.chunk.js",
-    "static/js/main.84ebba0f.chunk.js"
+    "static/js/2.ef750a64.chunk.js",
+    "static/js/main.86dac5ef.chunk.js"
   ]
 }
