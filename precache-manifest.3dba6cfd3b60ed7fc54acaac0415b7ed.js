@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ac0b50cf90f0bdc75fd6434ef0786b5f",
+    "revision": "fcce5a536b0b9b6559ba696a36e4fbac",
     "url": "/nikkiquibin/index.html"
   },
   {
@@ -20,12 +20,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/nikkiquibin/static/js/13.714b4427.chunk.js"
   },
   {
-    "revision": "7a55bc2176380689e7cc",
-    "url": "/nikkiquibin/static/js/2.ef750a64.chunk.js"
+    "revision": "bca19bec497cd28cf1c7",
+    "url": "/nikkiquibin/static/js/2.c8f5ce50.chunk.js"
   },
   {
     "revision": "0bf38cf6c0b51ec69d7a52e8875a6dbf",
-    "url": "/nikkiquibin/static/js/2.ef750a64.chunk.js.LICENSE.txt"
+    "url": "/nikkiquibin/static/js/2.c8f5ce50.chunk.js.LICENSE.txt"
   },
   {
     "revision": "6a55d7d304324afd5ee7",
@@ -56,8 +56,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/nikkiquibin/static/js/9.17231940.chunk.js"
   },
   {
-    "revision": "8a6cc7a15e314b65951c",
-    "url": "/nikkiquibin/static/js/main.64843615.chunk.js"
+    "revision": "f8584372365afa41c7eb",
+    "url": "/nikkiquibin/static/js/main.4c007cce.chunk.js"
   },
   {
     "revision": "3e911827688e8e46a938",

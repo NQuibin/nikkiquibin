@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.js": "/nikkiquibin/static/js/main.64843615.chunk.js",
-    "main.js.map": "/nikkiquibin/static/js/main.64843615.chunk.js.map",
+    "main.js": "/nikkiquibin/static/js/main.4c007cce.chunk.js",
+    "main.js.map": "/nikkiquibin/static/js/main.4c007cce.chunk.js.map",
     "runtime-main.js": "/nikkiquibin/static/js/runtime-main.b0534742.js",
     "runtime-main.js.map": "/nikkiquibin/static/js/runtime-main.b0534742.js.map",
-    "static/js/2.ef750a64.chunk.js": "/nikkiquibin/static/js/2.ef750a64.chunk.js",
-    "static/js/2.ef750a64.chunk.js.map": "/nikkiquibin/static/js/2.ef750a64.chunk.js.map",
+    "static/js/2.c8f5ce50.chunk.js": "/nikkiquibin/static/js/2.c8f5ce50.chunk.js",
+    "static/js/2.c8f5ce50.chunk.js.map": "/nikkiquibin/static/js/2.c8f5ce50.chunk.js.map",
     "static/js/3.44c8064d.chunk.js": "/nikkiquibin/static/js/3.44c8064d.chunk.js",
     "static/js/3.44c8064d.chunk.js.map": "/nikkiquibin/static/js/3.44c8064d.chunk.js.map",
     "static/js/4.678fe9f1.chunk.js": "/nikkiquibin/static/js/4.678fe9f1.chunk.js",
@@ -29,9 +29,9 @@
     "static/js/13.714b4427.chunk.js": "/nikkiquibin/static/js/13.714b4427.chunk.js",
     "static/js/13.714b4427.chunk.js.map": "/nikkiquibin/static/js/13.714b4427.chunk.js.map",
     "index.html": "/nikkiquibin/index.html",
-    "precache-manifest.49fa2ed6c9cc9cf235a46a6e520c63ac.js": "/nikkiquibin/precache-manifest.49fa2ed6c9cc9cf235a46a6e520c63ac.js",
+    "precache-manifest.3dba6cfd3b60ed7fc54acaac0415b7ed.js": "/nikkiquibin/precache-manifest.3dba6cfd3b60ed7fc54acaac0415b7ed.js",
     "service-worker.js": "/nikkiquibin/service-worker.js",
-    "static/js/2.ef750a64.chunk.js.LICENSE.txt": "/nikkiquibin/static/js/2.ef750a64.chunk.js.LICENSE.txt",
+    "static/js/2.c8f5ce50.chunk.js.LICENSE.txt": "/nikkiquibin/static/js/2.c8f5ce50.chunk.js.LICENSE.txt",
     "static/media/apache.svg": "/nikkiquibin/static/media/apache.93637c19.svg",
     "static/media/aws-lambda.svg": "/nikkiquibin/static/media/aws-lambda.75de55c8.svg",
     "static/media/codeigniter.svg": "/nikkiquibin/static/media/codeigniter.24817785.svg",
@@ -48,7 +48,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.b0534742.js",
-    "static/js/2.ef750a64.chunk.js",
-    "static/js/main.64843615.chunk.js"
+    "static/js/2.c8f5ce50.chunk.js",
+    "static/js/main.4c007cce.chunk.js"
   ]
 }
