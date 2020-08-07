@@ -1,1 +1,0 @@
-(this.webpackJsonpnikkiquibin=this.webpackJsonpnikkiquibin||[]).push([[5],{90:function(i,n,s){i.exports=s.p+"static/media/codeigniter.24817785.svg"}}]);
