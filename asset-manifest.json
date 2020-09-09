@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/nikkiquibin/static/js/main.ff9ec5a3.chunk.js",
-    "main.js.map": "/nikkiquibin/static/js/main.ff9ec5a3.chunk.js.map",
+    "main.js": "/nikkiquibin/static/js/main.d2fc3676.chunk.js",
+    "main.js.map": "/nikkiquibin/static/js/main.d2fc3676.chunk.js.map",
     "runtime-main.js": "/nikkiquibin/static/js/runtime-main.47d60f8a.js",
     "runtime-main.js.map": "/nikkiquibin/static/js/runtime-main.47d60f8a.js.map",
     "static/js/2.33855fb2.chunk.js": "/nikkiquibin/static/js/2.33855fb2.chunk.js",
@@ -29,7 +29,7 @@
     "static/js/13.c877495b.chunk.js": "/nikkiquibin/static/js/13.c877495b.chunk.js",
     "static/js/13.c877495b.chunk.js.map": "/nikkiquibin/static/js/13.c877495b.chunk.js.map",
     "index.html": "/nikkiquibin/index.html",
-    "precache-manifest.12b65b2c3d2d26e325b273975cd35743.js": "/nikkiquibin/precache-manifest.12b65b2c3d2d26e325b273975cd35743.js",
+    "precache-manifest.cda22806cafb2c567ed57f54fbf1ac07.js": "/nikkiquibin/precache-manifest.cda22806cafb2c567ed57f54fbf1ac07.js",
     "service-worker.js": "/nikkiquibin/service-worker.js",
     "static/js/2.33855fb2.chunk.js.LICENSE.txt": "/nikkiquibin/static/js/2.33855fb2.chunk.js.LICENSE.txt",
     "static/media/apache.svg": "/nikkiquibin/static/media/apache.93637c19.svg",
@@ -40,7 +40,7 @@
     "static/media/java.svg": "/nikkiquibin/static/media/java.66517ded.svg",
     "static/media/ms-office.svg": "/nikkiquibin/static/media/ms-office.f3b17fec.svg",
     "static/media/mysql.svg": "/nikkiquibin/static/media/mysql.c326c80a.svg",
-    "static/media/nikki_quibin_resume_2020-07-13.pdf": "/nikkiquibin/static/media/nikki_quibin_resume_2020-07-13.0361e8f4.pdf",
+    "static/media/nikki_quibin_resume_2020-09-09.pdf": "/nikkiquibin/static/media/nikki_quibin_resume_2020-09-09.0e77d033.pdf",
     "static/media/postgres.svg": "/nikkiquibin/static/media/postgres.acad8efc.svg",
     "static/media/python.svg": "/nikkiquibin/static/media/python.3e633281.svg",
     "static/media/react.svg": "/nikkiquibin/static/media/react.1f6a76a4.svg",
@@ -49,6 +49,6 @@
   "entrypoints": [
     "static/js/runtime-main.47d60f8a.js",
     "static/js/2.33855fb2.chunk.js",
-    "static/js/main.ff9ec5a3.chunk.js"
+    "static/js/main.d2fc3676.chunk.js"
   ]
 }

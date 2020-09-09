@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "55406c77a9102fa3519dcfa90a4e473f",
+    "revision": "152e0f826dddaa1e7baa967b23794c64",
     "url": "/nikkiquibin/index.html"
   },
   {
@@ -56,8 +56,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/nikkiquibin/static/js/9.8e0c9670.chunk.js"
   },
   {
-    "revision": "3bdabf18430fdf22ebd7",
-    "url": "/nikkiquibin/static/js/main.ff9ec5a3.chunk.js"
+    "revision": "36c39bfa4ffb2e1d9ea8",
+    "url": "/nikkiquibin/static/js/main.d2fc3676.chunk.js"
   },
   {
     "revision": "c8aa2add8f06fcb59354",
@@ -96,8 +96,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/nikkiquibin/static/media/mysql.c326c80a.svg"
   },
   {
-    "revision": "0361e8f4ccc08491d6efbf1bacf00c4e",
-    "url": "/nikkiquibin/static/media/nikki_quibin_resume_2020-07-13.0361e8f4.pdf"
+    "revision": "0e77d033f18f1819ac1bc6b0c9da2c69",
+    "url": "/nikkiquibin/static/media/nikki_quibin_resume_2020-09-09.0e77d033.pdf"
   },
   {
     "revision": "acad8efc369c4e22586f1d28bea710a1",
