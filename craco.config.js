@@ -3,7 +3,7 @@ const path = require('path')
 module.exports = {
   webpack: {
     alias: {
-      src: path.resolve(__dirname, 'src/')
+      'src': path.resolve(__dirname, 'src/')
     },
     configure: {
       devtool: 'hidden-source-map'
@@ -23,7 +23,7 @@ module.exports = {
    */
   resolve: {
     alias: {
-      src: path.resolve(__dirname, 'src/')
+      'src': path.resolve(__dirname, 'src/')
     }
   }
 }
