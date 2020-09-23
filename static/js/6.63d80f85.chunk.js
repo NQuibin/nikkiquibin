@@ -1,1 +1,0 @@
-(this.webpackJsonpnikkiquibin=this.webpackJsonpnikkiquibin||[]).push([[6],{93:function(i,n,s){i.exports=s.p+"static/media/java.66517ded.svg"}}]);

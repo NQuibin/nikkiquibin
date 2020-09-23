@@ -1,1 +1,0 @@
-(this.webpackJsonpnikkiquibin=this.webpackJsonpnikkiquibin||[]).push([[4],{91:function(i,s,n){i.exports=n.p+"static/media/aws-lambda.75de55c8.svg"}}]);
