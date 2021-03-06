@@ -12,7 +12,7 @@ const Experience = () => {
       <section className="flex flex-wrap">
         {experiences.map(experience => (
           <article
-            className="pb-10 md:w-1/2 md:p-10 lg:w-1/3"
+            className="pb-10 pt-4 border-solid border-t-2 border-purple-200 md:border-none md:pt-0 md:w-1/2 md:p-10 lg:w-1/3"
             key={experience.company}
           >
             <h3 className="mb-4 text-purple-600">{experience.company}</h3>
@@ -29,11 +29,11 @@ const Experience = () => {
               {experience.duration}
             </h4>
             <p className="mb-4">{experience.description}</p>
-            <section className="flex border-solid border-t-2 pt-4 border-purple-200">
-              {experience.techStack.map(tech => (
+            <section className="flex">
+              {experience.techStack.map((tech, index) => (
                 <Icon
                   title="hello"
-                  key={tech}
+                  key={index}
                   icon={tech.name}
                   tooltip={tech.label}
                   className="w-8 h-8 mr-3"
